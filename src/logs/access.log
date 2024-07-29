@@ -1,0 +1,10 @@
+::ffff:172.24.104.26 - [2024-07-26T02:32:41.138Z] POST /api/users/login
+[2024-07-26T02:32:41.383Z] Success: Bienvenido brunopanozzo@hotmail.com, ud se ha logeado exitosamente.!
+::ffff:172.24.104.26 - [2024-07-26T02:32:43.726Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
+[2024-07-26T02:32:43.795Z] Server error: MissingDocuments: The user needs to complete his documentation
+::ffff:172.24.104.26 - [2024-07-26T02:33:38.200Z] POST /api/users/login
+[2024-07-26T02:33:38.501Z] Success: Bienvenido brunopanozzo@hotmail.com, ud se ha logeado exitosamente.!
+::ffff:172.24.104.26 - [2024-07-26T02:33:41.128Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
+[2024-07-26T02:33:41.196Z] Server error: MissingDocuments: The user needs to complete his documentation
+::ffff:172.24.104.26 - [2024-07-26T02:35:17.893Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
+[2024-07-26T02:35:18.102Z] Success: El usuario '66a2acdf2be8106b801ecac0' cambió su rol.
