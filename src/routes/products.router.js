@@ -23,7 +23,7 @@ class ProductRouter extends BaseRouter {
 
         this.put('/:pid', [ADMIN, SUPER_ADMIN], /*userIsLoggedIn, userIsAdminOrPremium,*/ validateUpdateProduct, withController((controller, req, res) => controller.updateProduct(req, res)))
 
-        this.delete('/:pid', [ADMIN, SUPER_ADMIN], /*userIsLoggedIn, userIsAdminOrPremium,*/ validateProduct, withController((controller, req, res) => controller.deleteProduct(req, res)))
+        this.delete('/:pid', [ADMIN, SUPER_ADMIN], userIsLoggedIn, userIsAdminOrPremium, validateProduct, withController((controller, req, res) => controller.deleteProduct(req, res)))
 
         this.get('/:pid', [USER], validateProduct, withController((controller, req, res) => controller.getProductById(req, res)))
     }

@@ -2,6 +2,9 @@ const config = require('../../config/config')
 const { ADMIN, USER } = require('../../config/policies.constants')
 const { isValidPassword } = require('../../utils/hashing')
 
+const transport = require("../../utils/transport")
+const { GMAIL_ACCOUNT } = require('../../config/config')
+
 const { CustomError } = require('../errors/CustomError')
 const { ErrorCodes } = require('../errors/errorCodes')
 
@@ -96,13 +99,8 @@ class UsersServices {
             const requiredDocuments = ['profile', 'comprobanteDomicilio', 'comprobanteCuenta']
             const hasRequiredDocuments = requiredDocuments.every(doc => user.documents.some(d => (d.reference).includes(doc)))
             if (user.rol == USER) {
-                if (!hasRequiredDocuments)
-                    throw CustomError.createError({
-                        name: 'MissingDocuments',
-                        cause: `Se detectó documentación faltante.`,
-                        message: 'The user needs to complete his documentation',
-                        code: ErrorCodes.NOT_FOUND
-                    })
+                if (!hasRequiredDocuments) 
+                    return false
                 else
                     return true
             }
@@ -115,6 +113,82 @@ class UsersServices {
                 message: 'The user needs to complete his documentation',
                 code: ErrorCodes.NOT_FOUND
             })
+        }
+    }
+
+    async getUsers() {
+        return await this.dao.getUsers()
+    }
+
+    async deleteUser(userId) {
+        const user = await this.dao.getUserById(userId)
+        await this.dao.deleteUser(userId)
+        const title = 'Eliminación de cuenta'
+        const subject = 'Su cuenta ha sido cerrada'
+        const texto1 = 'Su cuenta ha sido cerrada por el administrador del sitio.'
+        const texto2 = 'Para ingresar nuevamente, deberá volver a registrarse.'
+        await this.notifyUser(user, title, subject, texto1, texto2)
+    }
+
+    async deleteOldUsers() {
+        try {
+            const users = await this.getUsers()
+            if (!Array.isArray(users)) {
+                throw new Error('Expected getUsers() to return an array.');
+            }
+            //vamos a filtrar los usuarios de mas de 2 días sin actividad
+            const now = new Date()
+            const twoDaysAgo = new Date(now);
+            twoDaysAgo.setDate(now.getDate() - 2);
+            const filteredUsers = users.filter(user => user.last_connection < twoDaysAgo)
+            return filteredUsers
+        }
+        catch (err) {
+            return []
+        }
+    }
+
+    async notifyUser(user, title, subject, texto1, texto2) {
+        try {
+            await transport.sendMail({
+                from: GMAIL_ACCOUNT,
+                to: `${user.email}`,
+                subject: subject,
+                html: `<div>
+                       <h1>${title}</h1>
+                       <h2>HOLA "${user.firstName} ${user.lastName}"</h2>
+                       <p>${texto1}
+                       <h3>${texto2}
+                       </div>`,
+                attachments: []
+            })
+            // envío de correo exitoso
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
+
+    async deleteAndNotifyOldUsers(users) {
+        try {
+            if (!Array.isArray(users)) {
+                throw new Error('Users should be an array.');
+            }
+            let user
+            for (let i = 0; i < users.length; i++) {
+                user = users[i]
+                //borro el usuario
+                await this.dao.deleteUser(user._id)
+                //notifico de tal accion
+                const title = 'Eliminación de cuenta'
+                const subject = 'Su cuenta se ha eliminado por inactividad'
+                const texto1 = 'Su cuenta se ha cerrado porque no se ha registrado actividad durante los últimos 2 días.'
+                const texto2 = 'Para ingresar nuevamente, deberá volver a registrarse.'
+                await this.notifyUser(user, title, subject, texto1, texto2)
+            }
+        }
+        catch (err) {
+            return null
         }
     }
 }

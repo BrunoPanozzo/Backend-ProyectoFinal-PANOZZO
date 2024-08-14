@@ -1,5 +1,7 @@
 const BaseRouter = require('./router')
 
+const { userIsLoggedIn, userIsAdmin } = require('../middlewares/user.middleware')
+
 const UsersController = require('../controllers/users.controller')
 const { PUBLIC, USER, ADMIN, SUPER_ADMIN, USER_PREMIUM } = require('../config/policies.constants')
 
@@ -41,6 +43,12 @@ class UserRouter extends BaseRouter {
                 maxCount: 1
             }
         ]), withController((controller, req, res) => controller.addFiles(req, res)))
+
+        this.get('/', [ADMIN, SUPER_ADMIN], userIsLoggedIn, userIsAdmin, withController((controller, req, res) => controller.getUsers(req, res)))
+
+        this.delete('/:uid', [ADMIN, SUPER_ADMIN], userIsLoggedIn, userIsAdmin, withController((controller, req, res) => controller.deleteUser(req, res)))
+
+        this.delete('/', [ADMIN, SUPER_ADMIN], userIsLoggedIn, userIsAdmin, withController((controller, req, res) => controller.deleteOldUsers(req, res)))
 
     }
 }

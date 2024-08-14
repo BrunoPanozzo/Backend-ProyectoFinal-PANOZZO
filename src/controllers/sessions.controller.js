@@ -3,6 +3,7 @@ const { UserDAO } = require("../dao/factory")
 const { CustomError } = require("../services/errors/CustomError")
 const { ErrorCodes } = require("../services/errors/errorCodes")
 const SessionsServices = require('../services/sessions/sessions.service')
+const UsersServices = require('../services/users/users.service')
 const { generateInvalidCredentialsError } = require("../services/users/errors")
 const transport = require("../utils/transport")
 const { SECRET, GMAIL_ACCOUNT } = require('../config/config')
@@ -13,10 +14,12 @@ class SessionsController {
     constructor() {
         const userDAO = UserDAO()
         this.sessionsService = new SessionsServices(userDAO)
+        this.usersService = new UsersServices(userDAO)
     }
 
     login(req, res) {
         try {
+            // no es necesario validar el login aquí, ya lo hace passport
             const email = req.body.email
             if (!req.user) {
                 //return res.status(400).send({ status: 'error', error: 'Credenciales inválidas!' })
@@ -27,13 +30,14 @@ class SessionsController {
                     message: 'Error trying to login a user',
                     code: ErrorCodes.INVALID_CREDENTIALS
                 })
-            }            
+            }
             req.session.user = new UserDTO(req.user)
 
-            // no es necesario validar el login aquí, ya lo hace passport!
-            //return res.redirect('/products')
             //return res.sendSuccess(`El usuario '${req.user.email}' se logueó exitosamente.`)
-            return res.sendSuccess(req.user._id)
+            //return res.sendSuccess(req.user._id)
+            req.logger.info(`Success: El usuario '${req.session.user.email}' se logueó exitosamente.`)
+            res.status(200);
+            res.redirect('/products')            
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -132,10 +136,12 @@ class SessionsController {
 
     register(req, res) {
         try {
-            //console.log('usuario: ', req.user)
-            // no es necesario registrar el usuario aquí, ya lo hacemos en la estrategia!
+            // no es necesario registrar el usuario aquí, ya lo hacemos en la estrategia
             //res.redirect('/login')
-            res.sendSuccess(`El usuario '${req.user.email}' se registró exitosamente.`)
+            //res.sendSuccess(`El usuario '${req.user.email}' se registró exitosamente.`)
+            req.logger.info(`Success: El usuario '${req.user.email}' se registró exitosamente.`)
+            res.status(200);
+            res.redirect('/login')
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -152,7 +158,7 @@ class SessionsController {
         try {
             req.session.user = new UserDTO(req.user)
 
-            // no es necesario validar el login aquí, ya lo hace passport!
+            // no es necesario validar el login aquí, ya lo hace passport
             return res.redirect('/products')
         }
         catch (err) {
@@ -165,7 +171,7 @@ class SessionsController {
         try {
             req.session.user = new UserDTO(req.user)
 
-            // no es necesario validar el login aquí, ya lo hace passport!
+            // no es necesario validar el login aquí, ya lo hace passport
             return res.redirect('/products')
         }
         catch (err) {
@@ -176,11 +182,15 @@ class SessionsController {
 
     async logout(req, res) {
         try {
+            const email = req.session.user.email
             await this.sessionsService.logout(req.session.user)
             const userId = req.session.user._id
             req.session.destroy(_ => {
                 //res.redirect('/')
-                res.sendSuccess(userId)
+                //res.sendSuccess(userId)
+                req.logger.info(`Success: El usuario '${email}' se deslogueó exitosamente.`)
+                res.status(200);
+                res.redirect('/')
             })
         }
         catch (err) {
@@ -203,8 +213,9 @@ class SessionsController {
 
             req.session.user = new UserDTO(req.user)
 
-            // no es necesario validar el login aquí, ya lo hace passport!
-            return res.redirect('/profile')
+            //return res.redirect('/profile')
+            res.status(200);
+            res.redirect('/profile')
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })

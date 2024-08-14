@@ -172,6 +172,16 @@ class UserDAO {
         }
     }
 
+    async getUsers() {
+        try {
+            const users = await userModel.find()
+            return users.map(d => d.toObject())
+        }
+        catch (err) {
+            return []
+        }
+    }
+
 }
 
 module.exports = { UserDAO }

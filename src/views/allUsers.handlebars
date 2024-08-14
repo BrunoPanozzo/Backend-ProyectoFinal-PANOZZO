@@ -1,0 +1,58 @@
+<div class="item-list-container">
+    <h1 class="titulo-importante">Usuarios de la Tienda</h1>
+    <div class="container col-md-5 my-5 ">
+        <div>
+            <p class="p-1 mt-1 mb-1">Bienvenido,
+                <strong>{{user.firstName}} {{user.lastName}}</strong> !!!
+            </p>
+            <p class="p-1 mt-1 mb-1">Ud ha ingresado bajo el rol: <strong>{{user.rol}}</strong></p>
+        </div>
+        <a href="/api/sessions/logout">
+            <button type="submit" class="btn btn-info text-decoration text-center">Logout</button>
+        </a>
+    </div>
+</div>
+<div class="text-center mb-1">
+    <div class="item-list" id="productsList">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <table class="table table-bordered mt-4 text-center">
+                    <thead>
+                        <tr class="justify-content-center">
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Última conexión</th>
+                            <th>Modificar rol</th>
+                            <th>Eliminar usuario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each users}}
+                        <tr class="justify-content-center">
+                            <td>{{this.firstName}}</td>
+                            <td>{{this.lastName}}</td>
+                            <td>{{this.email}}</td>
+                            <td>{{this.rol}}</td>
+                            <td>{{this.last_connection}}</td>
+                            <td>
+                                <button id="{{this._id}}"
+                                    class="btn btn-info text-decoration text-center btn-secondary btn-modifyUserRol">Modificar</button>
+                            </td>
+                            <td>
+                                <button id="{{this._id}}"
+                                    class="btn btn-info text-decoration text-center btn-danger btn-deleteUser">Eliminar</button>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button class="btn btn-info text-decoration text-center btn-deleteOldUsers">Borrar Usuarios sin Actividad
+    </button>
+</div>

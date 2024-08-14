@@ -1,5 +1,8 @@
 const ProductsServices = require('../services/products/products.service')
 const CartsServices = require('../services/carts/carts.service')
+const UsersServices = require('../services/users/users.service')
+const { UserDAO } = require('../dao/factory')
+
 const { generateProduct } = require('../mocks/generateProducts')
 const { generateUser } = require("../mocks/generateUsers")
 
@@ -14,7 +17,9 @@ class ViewsController {
         const productDAO = ProductDAO()
         this.productsService = new ProductsServices(productDAO)
         const cartsDAO = CartDAO()
-        this.cartsService = new CartsServices(cartsDAO)
+        this.cartsService = new CartsServices(cartsDAO)        
+        const userDAO = UserDAO()
+        this.usersServices = new UsersServices(userDAO)
     }
 
     async getProducts(req, res) {
@@ -229,11 +234,13 @@ class ViewsController {
         try {
             const isLoggedIn = ![null, undefined].includes(req.session.user)
 
-            res.render('index', {
+            const data = {
                 title: 'Inicio',
                 isLoggedIn,
                 isNotLoggedIn: !isLoggedIn,
-            })
+            }
+
+            res.render('index', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -244,9 +251,10 @@ class ViewsController {
     login(req, res) {
         try {
             // sólo se puede acceder si NO está logueado
-            res.render('login', {
+            const data = {
                 title: 'Login'
-            })
+            }
+            res.render('login', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -259,11 +267,13 @@ class ViewsController {
             // sólo se puede acceder si NO está logueado
             const token = req.params.token
             const email = req.params.email
-            res.render('resetPassword', {
+            const data = {
                 title: 'Reset Password',
                 email,
                 token
-            })
+            }
+
+            res.render('resetPassword', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -274,9 +284,10 @@ class ViewsController {
     forgetPassword(req, res) {
         try {
             // sólo se puede acceder si NO está logueado
-            res.render('forgetPassword', {
+            const data = {
                 title: 'Forget Password'
-            })
+            }
+            res.render('forgetPassword', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -287,9 +298,10 @@ class ViewsController {
     register(req, res) {
         try {
             //sólo se puede acceder si NO está logueado
-            res.render('register', {
+            const data = {
                 title: 'Register'
-            })
+            }
+            res.render('register', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -301,7 +313,7 @@ class ViewsController {
         try {
             //sólo se puede acceder SI está logueado
             let user = req.session.user
-            res.render('profile', {
+            const data = {
                 title: 'Mi perfil',
                 user: {
                     firstName: user.firstName,
@@ -309,7 +321,9 @@ class ViewsController {
                     age: user.age,
                     email: user.email
                 }
-            })
+            }
+            
+            res.render('profile', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -345,6 +359,29 @@ class ViewsController {
         }
         catch (err) {
             return res.sendServerError(err)  //{message: 'Error en el logger test'})
+        }
+    }
+
+    async adminUsers(req, res) {
+        try {
+            //sólo se puede acceder SI está logueado y es ADMIN
+            let user = req.session.user
+            const users = await this.usersServices.getUsers()        
+            const data = {
+                title: 'Administración de Usuarios',
+                useWS: false,
+                useSweetAlert: true,
+                scripts: ['deleteUser.js', 'deleteOldUsers.js', 'changeRol.js'],
+                styles: ['home.css'],
+                user,
+                users
+            }
+
+            res.render('allUsers', data )
+        }
+        catch (err) {
+            //return res.status(500).json({ message: err.message })
+            return res.sendServerError(err)
         }
     }
 

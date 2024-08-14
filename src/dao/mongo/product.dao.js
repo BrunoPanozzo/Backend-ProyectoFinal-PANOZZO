@@ -53,7 +53,7 @@ class ProductDAO {
     async getProductById(prodId) {
         try {
             const producto = await productModel.findOne({ _id: prodId })
-            return producto?.toObject() ?? null
+            return producto?.toObject() ?? false
         }
         catch (err) {
             console.error(err)
@@ -73,6 +73,10 @@ class ProductDAO {
         }
     }
 
+    generarIdUnico() {
+        return new Date().getTime().toString()
+    }
+
     async addProduct(title,
         description,
         price,
@@ -84,6 +88,7 @@ class ProductDAO {
         owner) {
         try {
             let newProduct = await productModel.create({
+                id: this.generarIdUnico(),
                 title,
                 description,
                 price,

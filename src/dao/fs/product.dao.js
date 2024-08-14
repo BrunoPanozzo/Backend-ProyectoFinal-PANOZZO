@@ -64,7 +64,7 @@ class ProductDAO {
     //buscar en el arreglo de productos un producto con un ID determinado. Caso contrario devolver msje de error
     async getProductById(prodId) {
         try {
-            const producto = this.#products.find(item => item.id === prodId)
+            const producto = this.#products.find(item => item._id === prodId)
             if (producto)
                 return producto
             else {
@@ -130,7 +130,7 @@ class ProductDAO {
     //actualizar, si sus campos modificados son válidos, un producto en el arreglo de productos inicial y en el archivo correspondiente
     async updateProduct(product, prodId) {
         try {
-            const existingProductIdx = this.#products.findIndex(item => item.id === prodId)
+            const existingProductIdx = this.#products.findIndex(item => item._id === prodId)
        
             // actualizar los datos de ese producto en el array
             const productData = { ...this.#products[existingProductIdx], ...product, id: prodId }
@@ -147,7 +147,7 @@ class ProductDAO {
     //dado un ID de producto, eliminar el mismo del arreglo de productos y del archivo correspondiente. Caso contrario devolver msje de error
     async deleteProduct(prodId) {
         try {
-            const producto = this.#products.find(item => item.id === prodId)
+            const producto = this.#products.find(item => item._id === prodId)
             if (producto) {
                 this.#products = this.#products.filter(item => item.id !== prodId)
                 await this.#updateProductsFile()
@@ -165,7 +165,7 @@ class ProductDAO {
 
     async decrementProductStock(prodId, quantity) {
         try {
-            const existingProductIdx = this.#products.findIndex(item => item.id === prodId)
+            const existingProductIdx = this.#products.findIndex(item => item._id === prodId)
        
             // actualizar los datos del stock ese producto en el array
             this.#products[existingProductIdx].stock -= quantity

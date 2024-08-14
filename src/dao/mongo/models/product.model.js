@@ -3,11 +3,10 @@ const mongoosePaginate = require('mongoose-paginate-v2');
 const { ADMIN_USER } = require('../../../config/config');
 
 const productSchema = new mongoose.Schema({   
-    // id: {
-    //     type: Number,
-    //     required : true,
-    //     unique: true
-    // },
+    id: {
+        type: Number,
+        required : true,
+    },
     title: {
         type: String,
         required : true

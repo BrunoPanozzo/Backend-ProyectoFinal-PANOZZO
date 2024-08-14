@@ -3,6 +3,7 @@ const { generateToken } = require('../utils/jwt')
 
 const { UserDAO } = require("../dao/factory")
 const { UserDTO } = require('../dao/dto/user.dto')
+const { SimpleUserDTO } = require('../dao/dto/simpleUser.dto')
 
 class UsersController {
 
@@ -71,17 +72,15 @@ class UsersController {
     async changeRole(req, res) {
         try {
             const userId = req.params.uid
-            const user = await this.usersService.changeRole(userId)
-            if (!user) {
-                return user === false
-                    ? res.sendNotFoundError(`El usuario con código '${userId}' no existe.`)
-                    : res.sendServerError(`No se pudo cambiar el rol del usuario '${userId}'`)
+            const result = await this.usersService.changeRole(userId)
+            if (!result) {
+                return res.sendServerError(`No se pudo cambiar el rol del usuario '${userId}'`)
             }
 
-            res.sendSuccess(`El usuario '${userId}' cambió su rol.`)
+            return res.sendSuccess(`El usuario '${userId}' cambió su rol.`)
         }
         catch (err) {
-            res.sendServerError(err)
+            return res.sendServerError(err)
         }
     }
 
@@ -101,6 +100,40 @@ class UsersController {
         }
     }
 
+    async getUsers(req, res) {
+        try {
+            const allUsers = await this.usersService.getUsers()
+            const usersDTOs = allUsers.map(user => new SimpleUserDTO(user))
+
+            return res.sendSuccess(usersDTOs)
+        }
+        catch (err) {
+            res.sendServerError(err)
+        }
+    }
+
+    async deleteOldUsers(req, res) {
+        try {
+            const oldUsers = await this.usersService.deleteOldUsers()
+            await this.usersService.deleteAndNotifyOldUsers(oldUsers)
+            return res.sendSuccess(oldUsers)
+        }
+        catch (err) {
+            res.sendServerError(err)
+        }
+    }
+
+    async deleteUser(req, res) {
+        try {
+            const userId = req.params.uid
+            const result = await this.usersService.deleteUser(userId)
+            return res.sendSuccess(result)
+        }
+        catch (err) {
+            res.sendServerError(err)
+        }
+    }
+        
 }
 
 module.exports = UsersController

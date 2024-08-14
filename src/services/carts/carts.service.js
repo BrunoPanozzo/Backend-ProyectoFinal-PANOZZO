@@ -12,10 +12,8 @@ class CartsServices {
 
         const productDAO = ProductDAO()
         this.productsService = new ProductsServices(productDAO)
-
         const ticketDAO = TicketDAO()
         this.ticketsService = new TicketsServices(ticketDAO)
-
         const userDAO = UserDAO()
         this.sessionsService = new SessionsServices(userDAO)
     }

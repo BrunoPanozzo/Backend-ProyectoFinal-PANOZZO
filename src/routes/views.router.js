@@ -57,6 +57,8 @@ class ViewRouter extends BaseRouter {
 
         this.get('/loggertest', [PUBLIC, USER, ADMIN, SUPER_ADMIN], withController((controller, req, res) => controller.loggerTest(req, res)))
 
+        this.get('/users', [ADMIN], userIsLoggedIn, userIsAdmin, withController((controller, req, res) => controller.adminUsers(req, res)))  
+
     }
 
 }
