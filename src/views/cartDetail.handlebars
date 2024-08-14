@@ -21,6 +21,12 @@
         </div>
         {{/each}}
         <p class="cart-resumen-compra">Ud. compró un total de {{cart.products.length}} artículo/s.</p>
-        <a href="/api/carts/{{cid}}/purchase" class="btn btn-secondary text-decoration text-center btn-ver-detalle">Confirmar compra</a>
+        {{#if notEmptyCart}}
+        <a href="/api/carts/{{cid}}/purchase"
+            class="btn btn-secondary text-decoration text-center btn-ver-detalle">Confirmar compra</a>
+        {{/if}}
+    </div>
+    <div class="text-center mb-1">
+        <button onclick="history.back()" class="btn btn-info text-decoration text-center">Volver</button>
     </div>
 </div>

@@ -161,13 +161,15 @@ class ViewsController {
             }
 
             let cid = cartId
+            let notEmptyCart = (cart.products.length != 0)
             let data = {
                 title: 'Cart detail',
                 // scripts: ['cartDetail.js'],
                 styles: ['home.css', 'cartDetail.css'],
                 useWS: false,
                 cart,
-                cid
+                cid, 
+                notEmptyCart
             }
 
             res.render('cartDetail', data)

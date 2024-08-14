@@ -99,7 +99,7 @@ class UsersServices {
             const requiredDocuments = ['profile', 'comprobanteDomicilio', 'comprobanteCuenta']
             const hasRequiredDocuments = requiredDocuments.every(doc => user.documents.some(d => (d.reference).includes(doc)))
             if (user.rol == USER) {
-                if (!hasRequiredDocuments) 
+                if (!hasRequiredDocuments)
                     return false
                 else
                     return true
@@ -121,13 +121,19 @@ class UsersServices {
     }
 
     async deleteUser(userId) {
-        const user = await this.dao.getUserById(userId)
-        await this.dao.deleteUser(userId)
-        const title = 'Eliminación de cuenta'
-        const subject = 'Su cuenta ha sido cerrada'
-        const texto1 = 'Su cuenta ha sido cerrada por el administrador del sitio.'
-        const texto2 = 'Para ingresar nuevamente, deberá volver a registrarse.'
-        await this.notifyUser(user, title, subject, texto1, texto2)
+        try {
+            const user = await this.dao.getUserById(userId)
+            await this.dao.deleteUser(userId)
+            const title = 'Eliminación de cuenta'
+            const subject = 'Su cuenta ha sido cerrada'
+            const texto1 = 'Su cuenta ha sido cerrada por el administrador del sitio.'
+            const texto2 = 'Para ingresar nuevamente, deberá volver a registrarse.'
+            await this.notifyUser(user, title, subject, texto1, texto2)
+            return true
+        }
+        catch (err) {
+            return false
+        }
     }
 
     async deleteOldUsers() {
@@ -186,9 +192,10 @@ class UsersServices {
                 const texto2 = 'Para ingresar nuevamente, deberá volver a registrarse.'
                 await this.notifyUser(user, title, subject, texto1, texto2)
             }
+            return true
         }
         catch (err) {
-            return null
+            return false
         }
     }
 }

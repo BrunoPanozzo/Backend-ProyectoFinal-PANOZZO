@@ -1,776 +1,281 @@
-::ffff:172.24.104.26 - [2024-07-26T02:32:41.138Z] POST /api/users/login
-[2024-07-26T02:32:41.383Z] Success: Bienvenido brunopanozzo@hotmail.com, ud se ha logeado exitosamente.!
-::ffff:172.24.104.26 - [2024-07-26T02:32:43.726Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
-[2024-07-26T02:32:43.795Z] Server error: MissingDocuments: The user needs to complete his documentation
-::ffff:172.24.104.26 - [2024-07-26T02:33:38.200Z] POST /api/users/login
-[2024-07-26T02:33:38.501Z] Success: Bienvenido brunopanozzo@hotmail.com, ud se ha logeado exitosamente.!
-::ffff:172.24.104.26 - [2024-07-26T02:33:41.128Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
-[2024-07-26T02:33:41.196Z] Server error: MissingDocuments: The user needs to complete his documentation
-::ffff:172.24.104.26 - [2024-07-26T02:35:17.893Z] PUT /api/users/premium/66a2acdf2be8106b801ecac0
-[2024-07-26T02:35:18.102Z] Success: El usuario '66a2acdf2be8106b801ecac0' cambió su rol.
-::1 - [2024-08-09T12:12:10.680Z] GET /
-::1 - [2024-08-09T12:12:12.111Z] GET /favicon.ico
-::1 - [2024-08-09T12:12:14.021Z] GET /login
-::1 - [2024-08-09T12:12:15.863Z] GET /api/sessions/github
-::1 - [2024-08-09T12:12:16.939Z] GET /api/sessions/githubcallback
-::1 - [2024-08-09T12:12:18.952Z] GET /products
-::1 - [2024-08-09T12:12:21.569Z] GET /api/sessions/logout
-[2024-08-09T12:12:21.668Z] Success: undefined
-::ffff:172.24.104.26 - [2024-08-11T22:22:32.409Z] GET /api/users/
-::ffff:172.24.104.26 - [2024-08-11T22:22:50.006Z] GET /api/users/
-::ffff:172.24.104.26 - [2024-08-11T22:23:13.082Z] GET /api/users/
-[2024-08-11T22:23:13.161Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:41:29.202Z] DELETE /api/users/
-::ffff:172.24.104.26 - [2024-08-11T22:41:48.553Z] DELETE /api/users/
-[2024-08-11T22:41:48.636Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:42:35.795Z] DELETE /api/users/
-[2024-08-11T22:42:35.866Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:44:26.044Z] DELETE /api/users/
-[2024-08-11T22:44:26.153Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:44:31.907Z] DELETE /api/users/
-[2024-08-11T22:44:31.956Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:45:13.237Z] DELETE /api/users/
-[2024-08-11T22:45:13.309Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:46:15.734Z] DELETE /api/users/
-[2024-08-11T22:46:15.799Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:47:46.142Z] DELETE /api/users/
-[2024-08-11T22:47:46.223Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:48:02.174Z] DELETE /api/users/
-[2024-08-11T22:48:02.234Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:49:26.294Z] DELETE /api/users/
-[2024-08-11T22:49:26.384Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T22:51:46.669Z] DELETE /api/users/
-[2024-08-11T22:51:46.762Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:56:22.010Z] DELETE /api/users/
-[2024-08-11T22:56:22.089Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:56:43.406Z] DELETE /api/users/
-[2024-08-11T22:56:43.479Z] Success: [object Object]
-::ffff:172.24.104.26 - [2024-08-11T22:57:01.539Z] DELETE /api/users/
-[2024-08-11T22:57:01.596Z] Success: 
-::ffff:172.24.104.26 - [2024-08-11T23:12:44.708Z] DELETE /api/users/
-[2024-08-11T23:12:44.819Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:14:01.732Z] DELETE /api/users/
-[2024-08-11T23:14:01.809Z] Success: [object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:15:50.254Z] DELETE /api/users/
-[2024-08-11T23:15:50.332Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:18:31.890Z] DELETE /api/users/
-[2024-08-11T23:18:34.504Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:24:20.961Z] DELETE /api/users/
-[2024-08-11T23:24:23.984Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:25:07.625Z] DELETE /api/users/
-[2024-08-11T23:25:10.552Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:27:37.029Z] DELETE /api/users/
-[2024-08-11T23:27:42.492Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:27:47.112Z] DELETE /api/users/
-[2024-08-11T23:27:52.490Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:31:58.853Z] DELETE /api/users/
-[2024-08-11T23:32:04.593Z] Success: [object Object],[object Object]
-::ffff:172.24.104.26 - [2024-08-11T23:32:20.696Z] GET /api/users/
-::1 - [2024-08-12T11:13:19.525Z] GET /
-::1 - [2024-08-12T11:13:21.847Z] GET /login
-::1 - [2024-08-12T11:13:25.514Z] GET /api/sessions/github
-::1 - [2024-08-12T11:13:26.242Z] GET /api/sessions/githubcallback
-::1 - [2024-08-12T11:13:28.880Z] GET /products
-::1 - [2024-08-12T11:13:39.654Z] GET /createProduct
-::1 - [2024-08-12T11:13:43.728Z] GET /realtimeproducts
-::1 - [2024-08-12T11:13:45.123Z] GET /products/create/
-::1 - [2024-08-12T11:13:53.307Z] GET /api/sessions/logout
-[2024-08-12T11:13:53.412Z] Success: undefined
-::1 - [2024-08-12T11:13:56.715Z] GET /login
-::1 - [2024-08-12T11:14:07.045Z] POST /api/sessions/login
-[2024-08-12T11:14:07.047Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:14:13.928Z] GET /products
-::1 - [2024-08-12T11:14:15.740Z] GET /realtimeproducts
-::1 - [2024-08-12T11:14:16.983Z] GET /products/create/
-::1 - [2024-08-12T11:14:26.732Z] POST /api/products/create
-[2024-08-12T11:14:26.833Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:17:55.235Z] POST /api/products/create
-::1 - [2024-08-12T11:18:01.247Z] POST /api/sessions/login
-[2024-08-12T11:18:01.248Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:18:06.816Z] GET /products
-::1 - [2024-08-12T11:18:08.725Z] GET /realtimeproducts
-::1 - [2024-08-12T11:18:09.608Z] GET /products/create/
-::1 - [2024-08-12T11:18:18.783Z] POST /api/products/create
-[2024-08-12T11:18:18.915Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:18:54.612Z] POST /api/products/create
-[2024-08-12T11:18:54.718Z] Success: 66b9ef9e2542d4eeeee4aa22
-::1 - [2024-08-12T11:19:01.127Z] POST /api/products/create
-[2024-08-12T11:19:01.229Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:22:42.073Z] POST /api/products/create
-::1 - [2024-08-12T11:25:21.722Z] GET /api/sessions/logout
-[2024-08-12T11:25:21.730Z] Server error: TypeError: Cannot read properties of undefined (reading '_id')
-::1 - [2024-08-12T11:25:27.356Z] POST /api/sessions/login
-[2024-08-12T11:25:27.357Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:25:32.751Z] GET /products
-::1 - [2024-08-12T11:25:34.557Z] GET /realtimeproducts
-::1 - [2024-08-12T11:25:35.426Z] GET /products/create/
-::1 - [2024-08-12T11:25:45.287Z] POST /api/products/create
-[2024-08-12T11:25:45.684Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:29:59.481Z] POST /api/sessions/login
-[2024-08-12T11:29:59.483Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:30:05.176Z] GET /products
-::1 - [2024-08-12T11:30:06.554Z] GET /products/create/
-::1 - [2024-08-12T11:30:17.033Z] POST /api/products/create
-[2024-08-12T11:30:17.160Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:34:50.783Z] POST /api/sessions/login
-[2024-08-12T11:34:50.784Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:34:56.080Z] GET /products
-::1 - [2024-08-12T11:34:57.249Z] GET /products/create/
-::1 - [2024-08-12T11:35:05.174Z] POST /api/products/create
-[2024-08-12T11:35:05.281Z] Server error: TypeError: Cannot read properties of null (reading '_id')
-::1 - [2024-08-12T11:55:27.442Z] POST /api/sessions/login
-[2024-08-12T11:55:27.449Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T11:55:32.431Z] GET /products
-::1 - [2024-08-12T11:55:33.632Z] GET /products/create/
-::1 - [2024-08-12T11:55:48.981Z] POST /api/products/create
-[2024-08-12T11:55:49.110Z] Success: 66b9f8452adcb99db8a93caf
-::1 - [2024-08-12T11:56:25.211Z] POST /api/products/create
-[2024-08-12T11:56:25.308Z] Success: 66b9f8692adcb99db8a93cb2
-::1 - [2024-08-12T11:56:54.845Z] POST /api/products/create
-[2024-08-12T11:56:54.943Z] Success: 66b9f8862adcb99db8a93cb5
-::1 - [2024-08-12T12:41:39.146Z] GET /api/sessions/github
-::1 - [2024-08-12T12:41:39.739Z] GET /api/sessions/githubcallback
-::1 - [2024-08-12T12:41:41.526Z] GET /products
-::1 - [2024-08-12T12:41:46.610Z] GET /carts/66b9ee5723a0fa62f9400d9b
-::1 - [2024-08-12T12:41:49.636Z] GET /products/detail/661e816c26c8b1e342774c3d
-::1 - [2024-08-12T12:41:51.258Z] GET /products/addcart/661e816c26c8b1e342774c3d
-::1 - [2024-08-12T12:41:56.951Z] GET /products/detail/661e819126c8b1e342774c40
-::1 - [2024-08-12T12:41:57.929Z] GET /products/addcart/661e819126c8b1e342774c40
-::1 - [2024-08-12T12:42:04.352Z] GET /carts/66b9ee5723a0fa62f9400d9b
-::1 - [2024-08-12T14:17:15.437Z] GET /admin
-::1 - [2024-08-12T14:17:22.134Z] GET /adminusers
-::1 - [2024-08-12T14:17:39.047Z] GET /users
-[2024-08-12T14:17:39.048Z] Fatal error: TypeError
-::1 - [2024-08-12T14:18:47.268Z] GET /users
-[2024-08-12T14:18:47.274Z] Fatal error: TypeError
-::1 - [2024-08-12T14:19:28.426Z] GET /users
-::1 - [2024-08-12T14:19:33.782Z] GET /login
-::1 - [2024-08-12T14:19:41.721Z] POST /api/sessions/login
-::1 - [2024-08-12T14:19:48.278Z] POST /api/sessions/login
-::1 - [2024-08-12T14:19:56.009Z] POST /api/sessions/login
-::1 - [2024-08-12T14:20:08.446Z] POST /api/sessions/login
-[2024-08-12T14:20:08.447Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:20:15.661Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T14:21:25.639Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T14:21:29.385Z] POST /api/sessions/login
-[2024-08-12T14:21:29.386Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T14:21:33.640Z] GET /admin
-::ffff:127.0.0.1 - [2024-08-12T14:21:37.638Z] GET /users
-::1 - [2024-08-12T14:27:38.057Z] POST /api/sessions/login
-[2024-08-12T14:27:38.060Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:27:42.775Z] GET /users
-::1 - [2024-08-12T14:28:04.650Z] GET /users
-::1 - [2024-08-12T14:29:34.792Z] GET /users
-::1 - [2024-08-12T14:29:38.609Z] POST /api/sessions/login
-[2024-08-12T14:29:38.610Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:29:43.269Z] GET /users
-::1 - [2024-08-12T14:30:17.103Z] GET /users
-::1 - [2024-08-12T14:30:18.721Z] GET /users
-::1 - [2024-08-12T14:30:20.309Z] GET /users
-::1 - [2024-08-12T14:30:21.798Z] GET /users
-::1 - [2024-08-12T14:31:33.008Z] GET /users
-::1 - [2024-08-12T14:31:36.884Z] POST /api/sessions/login
-[2024-08-12T14:31:36.884Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:31:41.260Z] GET /users
-::1 - [2024-08-12T14:36:10.668Z] GET /users
-::1 - [2024-08-12T14:36:13.148Z] POST /api/sessions/login
-[2024-08-12T14:36:13.149Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:36:16.882Z] GET /users
-::1 - [2024-08-12T14:36:17.075Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:36:18.819Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:36:18.837Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:09.830Z] GET /users
-::1 - [2024-08-12T14:37:09.988Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:09.990Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:09.991Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:12.773Z] GET /users
-::1 - [2024-08-12T14:37:12.924Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:12.925Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:12.926Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:14.237Z] GET /users
-::1 - [2024-08-12T14:37:14.387Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:14.388Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:14.390Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:15.062Z] GET /users
-::1 - [2024-08-12T14:37:15.209Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:15.211Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:15.212Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:19.670Z] GET /users
-::1 - [2024-08-12T14:37:19.848Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:19.850Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:19.850Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:20.414Z] GET /users
-::1 - [2024-08-12T14:37:20.565Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:20.567Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:20.567Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:53.981Z] GET /users
-::1 - [2024-08-12T14:37:54.133Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:54.135Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:54.137Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:55.413Z] GET /users
-::1 - [2024-08-12T14:37:55.587Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:55.589Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:55.590Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:56.108Z] GET /users
-::1 - [2024-08-12T14:37:56.255Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:56.257Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:56.258Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:56.853Z] GET /users
-::1 - [2024-08-12T14:37:57.003Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:57.004Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:37:57.004Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:57.593Z] GET /users
-::1 - [2024-08-12T14:37:57.738Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:37:57.740Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:37:57.740Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:38:50.247Z] GET /users
-::1 - [2024-08-12T14:38:50.396Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:38:50.397Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:38:50.399Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:38:51.378Z] GET /users
-::1 - [2024-08-12T14:38:51.528Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:38:51.529Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:38:51.530Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:38:51.942Z] GET /users
-::1 - [2024-08-12T14:38:52.092Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:38:52.093Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:38:52.094Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:38:52.405Z] GET /users
-::1 - [2024-08-12T14:38:52.558Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:38:52.560Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:38:52.561Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:18.429Z] GET /users
-::1 - [2024-08-12T14:41:19.437Z] GET /users
-::1 - [2024-08-12T14:41:21.604Z] POST /api/sessions/login
-[2024-08-12T14:41:21.604Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:41:26.954Z] GET /users
-::1 - [2024-08-12T14:41:27.128Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:27.138Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:27.144Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:51.965Z] GET /users
-::1 - [2024-08-12T14:41:52.110Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:52.111Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:52.113Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:54.150Z] GET /users
-::1 - [2024-08-12T14:41:54.299Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:54.301Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:54.301Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:54.951Z] GET /users
-::1 - [2024-08-12T14:41:55.102Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:55.104Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:55.105Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:55.685Z] GET /users
-::1 - [2024-08-12T14:41:55.835Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:55.837Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:55.838Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:56.278Z] GET /users
-::1 - [2024-08-12T14:41:56.431Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:56.433Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:56.436Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:56.581Z] GET /users
-::1 - [2024-08-12T14:41:56.730Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:56.732Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:56.733Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:56.917Z] GET /users
-::1 - [2024-08-12T14:41:57.063Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:57.064Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:57.064Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:57.517Z] GET /users
-::1 - [2024-08-12T14:41:57.662Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:57.663Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:57.664Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:57.758Z] GET /users
-::1 - [2024-08-12T14:41:57.907Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:57.908Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:41:57.909Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:58.686Z] GET /users
-::1 - [2024-08-12T14:41:58.834Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:41:58.836Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:41:58.837Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:43:51.517Z] GET /users
-::1 - [2024-08-12T14:43:54.323Z] POST /api/sessions/login
-[2024-08-12T14:43:54.324Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T14:43:58.708Z] GET /users
-::1 - [2024-08-12T14:43:58.858Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:43:58.862Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:43:58.865Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:26.572Z] GET /users
-::1 - [2024-08-12T14:44:26.714Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:26.716Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:26.716Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:27.373Z] GET /users
-::1 - [2024-08-12T14:44:27.523Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:27.525Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:27.525Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:27.838Z] GET /users
-::1 - [2024-08-12T14:44:27.987Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:27.988Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:27.991Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:28.269Z] GET /users
-::1 - [2024-08-12T14:44:28.441Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:28.443Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:28.445Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:28.623Z] GET /users
-::1 - [2024-08-12T14:44:28.772Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:28.772Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:28.774Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:28.967Z] GET /users
-::1 - [2024-08-12T14:44:29.116Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:29.117Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:29.118Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:41.918Z] GET /users
-::1 - [2024-08-12T14:44:42.067Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:42.069Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:42.069Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:42.592Z] GET /users
-::1 - [2024-08-12T14:44:42.742Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:42.743Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:44:42.744Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:43.119Z] GET /users
-::1 - [2024-08-12T14:44:43.266Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:44:43.267Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:44:43.268Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:45:24.222Z] GET /users
-::1 - [2024-08-12T14:45:24.403Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:45:24.623Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:45:24.630Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:45:59.622Z] GET /users
-::1 - [2024-08-12T14:45:59.774Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:45:59.775Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:45:59.775Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:46:00.421Z] GET /users
-::1 - [2024-08-12T14:46:00.572Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:46:00.572Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:46:00.576Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:46:08.920Z] GET /users
-::1 - [2024-08-12T14:46:09.243Z] GET /js/changeRol.js
-::ffff:127.0.0.1 - [2024-08-12T14:46:09.465Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:46:09.489Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:46:46.934Z] GET /users
-::1 - [2024-08-12T14:46:47.145Z] GET /js/changeRol.js
-::1 - [2024-08-12T14:46:47.377Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:46:47.378Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:46:49.412Z] GET /users
-::1 - [2024-08-12T14:46:49.557Z] GET /js/deleteUser.js
-::1 - [2024-08-12T14:46:49.558Z] GET /js/deleteOldUsers.js
-::1 - [2024-08-12T14:46:49.561Z] GET /js/changeRol.js
-::1 - [2024-08-12T15:01:48.541Z] POST /api/sessions/login
-[2024-08-12T15:01:48.544Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:02:10.336Z] GET /users
-::1 - [2024-08-12T15:02:15.092Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:02:23.115Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:02:39.826Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:07:21.457Z] POST /api/sessions/login
-[2024-08-12T15:07:21.460Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T15:07:25.946Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T15:07:30.617Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:07:32.825Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:07:33.964Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:08:02.382Z] GET /users
-::1 - [2024-08-12T15:08:03.555Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:08:48.268Z] GET /users
-::1 - [2024-08-12T15:08:54.584Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:10:07.886Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T15:10:11.705Z] POST /api/sessions/login
-[2024-08-12T15:10:11.706Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T15:10:16.233Z] GET /users
-::1 - [2024-08-12T15:10:19.861Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:12:23.854Z] GET /users
-::1 - [2024-08-12T15:12:24.345Z] GET /users
-::1 - [2024-08-12T15:12:27.043Z] POST /api/sessions/login
-[2024-08-12T15:12:27.044Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:12:33.720Z] GET /users
-::1 - [2024-08-12T15:12:40.126Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:14:33.907Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T15:14:37.219Z] POST /api/sessions/login
-[2024-08-12T15:14:37.221Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T15:14:41.741Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T15:14:43.926Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:14:47.660Z] PUT /api/users/premium/
-::ffff:127.0.0.1 - [2024-08-12T15:14:49.060Z] PUT /api/users/premium/
-::1 - [2024-08-12T15:15:35.166Z] POST /api/sessions/login
-[2024-08-12T15:15:35.169Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:15:41.184Z] GET /users
-::1 - [2024-08-12T15:15:43.464Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:15:43.519Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:17:02.835Z] GET /users
-::1 - [2024-08-12T15:17:05.980Z] POST /api/sessions/login
-[2024-08-12T15:17:05.981Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:17:10.384Z] GET /users
-::1 - [2024-08-12T15:17:13.037Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:17:13.084Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:17:44.341Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:17:44.386Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:17:48.045Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:17:48.090Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:18:18.422Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:18:18.466Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:32:50.149Z] GET /users
-::1 - [2024-08-12T15:33:00.622Z] POST /api/sessions/login
-[2024-08-12T15:33:00.623Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:33:07.196Z] GET /users
-::1 - [2024-08-12T15:33:09.925Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:33:09.975Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:50:02.340Z] POST /api/sessions/login
-[2024-08-12T15:50:02.343Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:50:08.682Z] GET /users
-::1 - [2024-08-12T15:50:10.613Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:50:10.661Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:50:37.588Z] GET /users
-::1 - [2024-08-12T15:50:40.876Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:50:40.965Z] Server error: No se pudo cambiar el rol del usuario '66b9ee5723a0fa62f9400d9d'
-::1 - [2024-08-12T15:50:46.337Z] GET /users
-::1 - [2024-08-12T15:52:22.310Z] GET /users
-::1 - [2024-08-12T15:52:23.920Z] GET /users
-::1 - [2024-08-12T15:52:24.894Z] GET /users
-::1 - [2024-08-12T15:52:26.849Z] POST /api/sessions/login
-[2024-08-12T15:52:26.851Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:52:31.574Z] GET /users
-::1 - [2024-08-12T15:52:33.094Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:52:33.198Z] Server error: No se pudo cambiar el rol del usuario '66b9ee5723a0fa62f9400d9d'
-::1 - [2024-08-12T15:53:48.685Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:53:48.829Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:53:49.323Z] GET /users
-::1 - [2024-08-12T15:53:52.803Z] POST /api/sessions/login
-[2024-08-12T15:53:52.803Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:53:56.778Z] GET /users
-::1 - [2024-08-12T15:53:58.757Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:53:58.803Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:54:38.486Z] GET /users
-::1 - [2024-08-12T15:54:41.807Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:54:41.954Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:54:42.008Z] GET /users
-::1 - [2024-08-12T15:54:58.013Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:54:58.057Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:55:26.066Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:55:26.131Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:55:29.118Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:55:29.165Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:55:30.062Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:55:30.109Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:55:58.617Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:55:58.732Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:55:59.061Z] GET /users
-::1 - [2024-08-12T15:56:01.005Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:01.098Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:01.150Z] GET /users
-::1 - [2024-08-12T15:56:02.045Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:02.140Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:02.193Z] GET /users
-::1 - [2024-08-12T15:56:02.823Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:02.916Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:02.967Z] GET /users
-::1 - [2024-08-12T15:56:03.499Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:03.591Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:03.643Z] GET /users
-::1 - [2024-08-12T15:56:04.156Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:04.248Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:04.299Z] GET /users
-::1 - [2024-08-12T15:56:04.893Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:04.988Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:05.040Z] GET /users
-::1 - [2024-08-12T15:56:05.582Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:56:05.676Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:56:05.728Z] GET /users
-::1 - [2024-08-12T15:57:11.585Z] GET /users
-::1 - [2024-08-12T15:57:14.594Z] POST /api/sessions/login
-[2024-08-12T15:57:14.595Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:57:21.044Z] GET /users
-::1 - [2024-08-12T15:57:23.956Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:57:24.049Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:57:24.099Z] GET /users
-::1 - [2024-08-12T15:57:27.046Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:57:27.138Z] Success: El usuario '66b9ee5723a0fa62f9400d9d' cambió su rol.
-::1 - [2024-08-12T15:57:27.199Z] GET /users
-::1 - [2024-08-12T15:57:36.397Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T15:57:36.469Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:57:36.528Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:57:38.286Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:57:38.331Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:58:00.902Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:58:00.947Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T15:59:13.461Z] GET /users
-::1 - [2024-08-12T15:59:15.780Z] POST /api/sessions/login
-[2024-08-12T15:59:15.781Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T15:59:19.346Z] GET /users
-::1 - [2024-08-12T15:59:21.807Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T15:59:21.856Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T16:01:49.444Z] POST /api/sessions/login
-[2024-08-12T16:01:49.447Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:01:59.314Z] GET /users
-::1 - [2024-08-12T16:02:01.134Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T16:02:01.183Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T16:03:01.017Z] GET /users
-::1 - [2024-08-12T16:03:02.717Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T16:03:02.765Z] Server error: MissingDocuments: The user needs to complete his documentation
-::ffff:127.0.0.1 - [2024-08-12T16:03:43.000Z] GET /users
-::1 - [2024-08-12T16:03:43.557Z] GET /users
-::1 - [2024-08-12T16:03:45.838Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-[2024-08-12T16:03:45.885Z] Server error: MissingDocuments: The user needs to complete his documentation
-::1 - [2024-08-12T16:04:28.551Z] GET /users
-::1 - [2024-08-12T16:04:29.822Z] PUT /api/users/premium/66b9ee5723a0fa62f9400d9d
-::ffff:127.0.0.1 - [2024-08-12T16:19:39.152Z] POST /api/sessions/login
-[2024-08-12T16:19:39.155Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T16:19:46.734Z] GET /users
-::ffff:127.0.0.1 - [2024-08-12T16:19:51.473Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:20:02.235Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:21:10.686Z] GET /users
-::1 - [2024-08-12T16:21:13.649Z] POST /api/sessions/login
-[2024-08-12T16:21:13.650Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:21:17.729Z] GET /users
-::1 - [2024-08-12T16:21:19.843Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:21:21.458Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:21:22.217Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:21:48.968Z] GET /users
-::1 - [2024-08-12T16:22:05.485Z] GET /users
-::1 - [2024-08-12T16:22:06.609Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:23:31.701Z] GET /users
-::1 - [2024-08-12T16:23:35.027Z] POST /api/sessions/login
-[2024-08-12T16:23:35.029Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:23:39.141Z] GET /users
-::1 - [2024-08-12T16:23:41.008Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:23:44.477Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:24:47.293Z] GET /users
-::1 - [2024-08-12T16:24:48.757Z] GET /users
-::1 - [2024-08-12T16:24:51.587Z] POST /api/sessions/login
-[2024-08-12T16:24:51.587Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:24:56.005Z] GET /users
-::1 - [2024-08-12T16:24:58.173Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::1 - [2024-08-12T16:25:44.349Z] DELETE /api/users/delete/66b9ee5723a0fa62f9400d9d
-::ffff:127.0.0.1 - [2024-08-12T16:26:20.527Z] POST /api/sessions/login
-[2024-08-12T16:26:20.530Z] Success: dflksgd8sfg7sd890fg
-::ffff:127.0.0.1 - [2024-08-12T16:26:26.149Z] GET /users
-::1 - [2024-08-12T16:26:27.787Z] DELETE /api/users/66b9ee5723a0fa62f9400d9d
-[2024-08-12T16:26:31.011Z] Success: undefined
-::1 - [2024-08-12T16:26:31.113Z] GET /users
-::1 - [2024-08-12T16:30:07.165Z] GET /realTimeProducts
-::1 - [2024-08-12T16:53:22.087Z] GET /users
-::1 - [2024-08-12T16:53:31.688Z] POST /api/sessions/login
-[2024-08-12T16:53:31.689Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:53:35.671Z] GET /users
-::1 - [2024-08-12T16:53:42.178Z] GET /api/sessions/logout
-[2024-08-12T16:53:42.278Z] Success: undefined
-::1 - [2024-08-12T16:53:46.964Z] GET /login
-::1 - [2024-08-12T16:53:47.794Z] GET /api/sessions/github
-::1 - [2024-08-12T16:53:48.450Z] GET /api/sessions/githubcallback
-::1 - [2024-08-12T16:53:50.030Z] GET /products
-::1 - [2024-08-12T16:53:51.841Z] GET /api/sessions/logout
-[2024-08-12T16:53:51.942Z] Success: undefined
-::1 - [2024-08-12T16:53:56.416Z] GET /login
-::1 - [2024-08-12T16:54:00.649Z] GET /api/sessions/github
-::1 - [2024-08-12T16:54:01.118Z] GET /api/sessions/githubcallback
-::1 - [2024-08-12T16:54:02.303Z] GET /products
-::1 - [2024-08-12T16:54:04.674Z] GET /users
-::1 - [2024-08-12T16:54:05.815Z] GET /users
-::1 - [2024-08-12T16:54:13.635Z] GET /api/sessions/logout
-[2024-08-12T16:54:13.735Z] Success: undefined
-::1 - [2024-08-12T16:54:26.692Z] POST /api/sessions/login
-[2024-08-12T16:54:26.693Z] Success: dflksgd8sfg7sd890fg
-::1 - [2024-08-12T16:54:30.287Z] GET /users
-::1 - [2024-08-12T16:54:37.732Z] PUT /api/users/premium/66ba3e1d1000cf452ad4e298
-::1 - [2024-08-12T16:55:15.352Z] GET /users
-::1 - [2024-08-12T16:55:27.999Z] GET /realTimeProducts
-::1 - [2024-08-12T16:55:33.194Z] DELETE /api/products/66b9f8862adcb99db8a93cb5
-[2024-08-12T16:55:33.345Z] Success: El producto con código '66b9f8862adcb99db8a93cb5' se eliminó exitosamente.
-::1 - [2024-08-12T16:55:33.399Z] GET /realtimeproducts
-::1 - [2024-08-12T16:55:35.512Z] GET /realTimeProducts
-::1 - [2024-08-12T16:57:08.127Z] GET /forget_password
-::1 - [2024-08-12T16:57:10.814Z] POST /api/sessions/forget_password
-[2024-08-12T16:57:14.200Z] Success: Email enviado con éxito!!
-::1 - [2024-08-12T17:03:05.393Z] GET /reset_password/brunopanozzo@hotmail.com/token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vcGFub3p6b0Bob3RtYWlsLmNvbSIsImlhdCI6MTcyMzQ4MTgzMCwiZXhwIjoxNzIzNDg1NDMwfQ.xH_ewmLF1V9QWtt5CHzB6Ca8A65bw6ZpAGAGHHJMHPI
-::1 - [2024-08-12T17:03:09.393Z] POST /api/sessions/reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vcGFub3p6b0Bob3RtYWlsLmNvbSIsImlhdCI6MTcyMzQ4MTgzMCwiZXhwIjoxNzIzNDg1NDMwfQ.xH_ewmLF1V9QWtt5CHzB6Ca8A65bw6ZpAGAGHHJMHPI
-[2024-08-12T17:03:09.850Z] No se pudo actualizar la contraseña porque ingresó la contraseña actual.
-::1 - [2024-08-12T17:03:09.942Z] GET /login
-::1 - [2024-08-12T17:03:15.365Z] POST /api/sessions/login
-[2024-08-12T17:03:15.529Z] Success: 66ba3e1d1000cf452ad4e298
-::1 - [2024-08-12T17:03:22.848Z] GET /realTimeProducts
-::1 - [2024-08-12T17:03:26.428Z] DELETE /api/products/66b9f8452adcb99db8a93caf
-[2024-08-12T17:03:26.516Z] Unauthorization error: El usuario 'brunopanozzo@hotmail.com' no puede borrar el producto 'er' porque no es su owner.
-::1 - [2024-08-12T17:03:26.608Z] GET /realtimeproducts
-::1 - [2024-08-12T17:03:28.921Z] GET /realTimeProducts
-::1 - [2024-08-12T17:03:34.142Z] DELETE /api/products/66b9f8452adcb99db8a93caf
-[2024-08-12T17:03:34.233Z] Unauthorization error: El usuario 'brunopanozzo@hotmail.com' no puede borrar el producto 'er' porque no es su owner.
-::1 - [2024-08-12T17:03:34.350Z] GET /realtimeproducts
-::1 - [2024-08-12T17:03:35.523Z] GET /realTimeProducts
-::1 - [2024-08-12T17:04:43.049Z] DELETE /api/products/66b9f8692adcb99db8a93cb2
-::1 - [2024-08-12T17:04:43.096Z] GET /realtimeproducts
-::1 - [2024-08-12T17:04:44.995Z] GET /realTimeProducts
-::1 - [2024-08-12T17:04:49.369Z] DELETE /api/products/66b9f8692adcb99db8a93cb2
-::1 - [2024-08-12T17:04:49.416Z] GET /realtimeproducts
-::1 - [2024-08-12T17:04:50.586Z] GET /realTimeProducts
-::1 - [2024-08-12T17:04:52.733Z] GET /realTimeProducts
-::1 - [2024-08-12T17:04:54.761Z] DELETE /api/products/66b9f8692adcb99db8a93cb2
-::1 - [2024-08-12T17:04:54.807Z] GET /realtimeproducts
-::1 - [2024-08-12T17:04:56.476Z] GET /realTimeProducts
-::1 - [2024-08-12T17:05:15.138Z] POST /api/sessions/login
-[2024-08-12T17:05:15.336Z] Success: 66ba3e1d1000cf452ad4e298
-::1 - [2024-08-12T17:05:18.665Z] GET /realTimeProducts
-::1 - [2024-08-12T17:05:24.427Z] DELETE /api/products/66b9f8692adcb99db8a93cb2
-[2024-08-12T17:05:24.566Z] Success: El producto con código '66b9f8692adcb99db8a93cb2' se eliminó exitosamente.
-::1 - [2024-08-12T17:05:24.619Z] GET /realtimeproducts
-::1 - [2024-08-12T17:05:27.104Z] GET /realTimeProducts
-::1 - [2024-08-13T15:28:55.731Z] GET /
-::1 - [2024-08-13T15:28:58.099Z] GET /login
-::1 - [2024-08-13T15:29:00.263Z] GET /api/sessions/github
-::1 - [2024-08-13T15:29:01.184Z] GET /api/sessions/githubcallback
-::1 - [2024-08-13T15:29:03.739Z] GET /products
-::1 - [2024-08-13T15:29:15.829Z] GET /api/sessions/logout
-[2024-08-13T15:29:15.951Z] Success: undefined
-::1 - [2024-08-13T15:29:29.709Z] POST /api/sessions/login
-[2024-08-13T15:29:29.926Z] Success: 66ba3e1d1000cf452ad4e298
-::1 - [2024-08-13T15:30:14.911Z] GET /login
-::1 - [2024-08-13T15:36:22.770Z] GET /login
-::1 - [2024-08-13T15:36:27.214Z] POST /api/sessions/login
-[2024-08-13T15:36:27.433Z] Server error: ReferenceError: payload is not defined
-::1 - [2024-08-13T15:36:44.191Z] POST /api/sessions/login
-[2024-08-13T15:36:44.463Z] Success: El usuario 'brunopanozzo@hotmail.com' se logueó exitosamente.
-::1 - [2024-08-13T15:36:52.055Z] GET /products
-::1 - [2024-08-13T15:37:09.999Z] POST /api/sessions/login
-[2024-08-13T15:37:10.166Z] Success: El usuario 'brunopanozzo@hotmail.com' se logueó exitosamente.
-::1 - [2024-08-13T15:37:38.422Z] POST /api/sessions/login
-[2024-08-13T15:37:38.639Z] Success: El usuario 'brunopanozzo@hotmail.com' se logueó exitosamente.
-::1 - [2024-08-13T15:37:39.077Z] GET /products
-::1 - [2024-08-13T15:40:41.634Z] GET /api/sessions/logout
-[2024-08-13T15:40:41.640Z] Server error: TypeError: Cannot read properties of undefined (reading '_id')
-::1 - [2024-08-13T15:40:45.436Z] POST /api/sessions/login
-[2024-08-13T15:40:45.602Z] Success: El usuario 'brunopanozzo@hotmail.com' se logueó exitosamente.
-::1 - [2024-08-13T15:40:45.649Z] GET /products
-::1 - [2024-08-13T15:44:10.779Z] GET /api/sessions/logout
-[2024-08-13T15:44:10.782Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::1 - [2024-08-13T15:44:12.666Z] GET /api/sessions/logout
-[2024-08-13T15:44:12.667Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::1 - [2024-08-13T15:44:15.892Z] POST /api/sessions/login
-[2024-08-13T15:44:16.095Z] Success: El usuario 'brunopanozzo@hotmail.com' se logueó exitosamente.
-::1 - [2024-08-13T15:44:16.683Z] GET /products
-::1 - [2024-08-13T15:44:20.556Z] GET /api/sessions/logout
-[2024-08-13T15:44:20.663Z] Success: El usuario 'brunopanozzo@hotmail.com' se deslogueó exitosamente.
-::1 - [2024-08-13T15:44:20.711Z] GET /
-::1 - [2024-08-14T14:04:36.370Z] GET /login
-::1 - [2024-08-14T14:04:36.559Z] GET /favicon.ico
-::1 - [2024-08-14T14:35:13.632Z] GET /register
-::1 - [2024-08-14T14:35:42.652Z] POST /api/sessions/register
-[2024-08-14T14:35:43.041Z] Success: El usuario 'juanperezcoder@gmail.com' se registró exitosamente.
-::1 - [2024-08-14T14:35:43.417Z] GET /login
-::1 - [2024-08-14T14:36:06.219Z] POST /api/sessions/login
-[2024-08-14T14:36:06.425Z] Success: El usuario 'juanperezcoder@gmail.com' se logueó exitosamente.
-::1 - [2024-08-14T14:36:06.517Z] GET /products
-::1 - [2024-08-14T14:36:09.138Z] GET /api/sessions/logout
-[2024-08-14T14:36:09.245Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
-::1 - [2024-08-14T14:36:09.293Z] GET /
-::1 - [2024-08-14T14:36:10.802Z] GET /register
-::1 - [2024-08-14T14:36:31.572Z] POST /api/sessions/register
-[2024-08-14T14:36:31.925Z] Success: El usuario 'martingarciacoder@gmail.com' se registró exitosamente.
-::1 - [2024-08-14T14:36:32.018Z] GET /login
-::1 - [2024-08-14T14:37:01.906Z] POST /api/sessions/login
-[2024-08-14T14:37:02.067Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
-::1 - [2024-08-14T14:37:02.165Z] GET /products
-::1 - [2024-08-14T14:37:06.078Z] GET /api/sessions/logout
-[2024-08-14T14:37:06.189Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
-::1 - [2024-08-14T14:37:06.242Z] GET /
-::ffff:172.24.104.26 - [2024-08-14T15:08:11.211Z] POST /api/users/66a2acdf2be8106b801ecac0/documents
-[2024-08-14T15:08:11.263Z] Server error: UploadFileFailed: Error trying to load a file
-::ffff:172.24.104.26 - [2024-08-14T15:08:58.500Z] POST /api/users/66bcc0ef20f6274cd3048f71/documents
-[2024-08-14T15:08:58.837Z] Success: Se cargaron nuevos archivos para el usuario '66bcc0ef20f6274cd3048f71'.
-::1 - [2024-08-14T15:30:40.628Z] GET /register
-::1 - [2024-08-14T15:30:45.507Z] GET /login
-::1 - [2024-08-14T15:30:55.635Z] GET /login
-::1 - [2024-08-14T15:31:06.293Z] POST /api/sessions/login
-[2024-08-14T15:31:06.293Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T15:31:06.341Z] GET /products
-::1 - [2024-08-14T15:39:42.428Z] GET /api/sessions/logout
-[2024-08-14T15:39:42.429Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::1 - [2024-08-14T15:39:47.804Z] POST /api/sessions/login
-[2024-08-14T15:39:47.804Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T15:39:47.852Z] GET /products
-::1 - [2024-08-14T15:41:27.070Z] GET /login
-::1 - [2024-08-14T15:41:40.620Z] POST /api/sessions/login
-[2024-08-14T15:41:40.621Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T15:41:40.944Z] GET /products
-::1 - [2024-08-14T15:41:43.882Z] GET /products
-::1 - [2024-08-14T15:41:45.612Z] GET /products
-::1 - [2024-08-14T15:41:46.826Z] GET /products
-::1 - [2024-08-14T15:41:48.113Z] GET /products
-::1 - [2024-08-14T15:41:49.401Z] GET /products
-::1 - [2024-08-14T15:41:50.576Z] GET /products
-::1 - [2024-08-14T15:41:51.682Z] GET /products
-::1 - [2024-08-14T15:41:52.607Z] GET /products
-::1 - [2024-08-14T15:41:53.783Z] GET /products
-::1 - [2024-08-14T15:41:55.869Z] GET /products
-::1 - [2024-08-14T15:41:57.190Z] GET /products
-::1 - [2024-08-14T15:41:58.045Z] GET /products
-::1 - [2024-08-14T15:41:58.904Z] GET /products
-::1 - [2024-08-14T15:41:59.623Z] GET /products
-::1 - [2024-08-14T15:42:00.311Z] GET /products
-::1 - [2024-08-14T15:42:00.775Z] GET /products
-::1 - [2024-08-14T15:42:01.250Z] GET /products
-::1 - [2024-08-14T15:42:01.685Z] GET /products
-::1 - [2024-08-14T15:42:02.045Z] GET /products
-::1 - [2024-08-14T15:42:02.302Z] GET /products
-::1 - [2024-08-14T15:42:02.581Z] GET /products
-::1 - [2024-08-14T15:42:02.829Z] GET /products
-::1 - [2024-08-14T15:42:03.436Z] GET /products
-::1 - [2024-08-14T15:42:04.084Z] GET /products
-::1 - [2024-08-14T15:42:04.830Z] GET /realtimeproducts
-::1 - [2024-08-14T15:42:06.187Z] GET /products/create/
-::1 - [2024-08-14T15:42:09.405Z] GET /carts/
-::1 - [2024-08-14T15:42:13.239Z] GET /carts/
-::1 - [2024-08-14T15:42:18.837Z] GET /carts/
-::1 - [2024-08-14T15:42:21.293Z] GET /profile
-::1 - [2024-08-14T15:42:22.764Z] GET /
-::1 - [2024-08-14T15:44:58.911Z] GET /api/sessions/logout
-[2024-08-14T15:44:58.914Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::1 - [2024-08-14T15:45:01.548Z] GET /api/sessions/logout
-[2024-08-14T15:45:01.549Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::1 - [2024-08-14T15:53:14.231Z] GET /api/sessions/logout
-[2024-08-14T15:53:14.231Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
-::ffff:127.0.0.1 - [2024-08-14T15:53:22.573Z] GET /api/sessions/logout
-[2024-08-14T15:53:22.576Z] El usuario ya cerró su sesión.
-::1 - [2024-08-14T15:53:22.881Z] GET /
-::1 - [2024-08-14T15:53:28.330Z] GET /users
-::1 - [2024-08-14T15:53:41.755Z] GET /api/sessions/logout
-[2024-08-14T15:53:41.755Z] El usuario ya cerró su sesión.
-::1 - [2024-08-14T15:53:41.805Z] GET /
-::1 - [2024-08-14T15:54:00.459Z] GET /login
-::1 - [2024-08-14T15:54:09.258Z] POST /api/sessions/login
-[2024-08-14T15:54:09.259Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T15:54:09.307Z] GET /products
-::1 - [2024-08-14T16:11:02.411Z] GET /realtimeproducts
-::1 - [2024-08-14T16:22:16.494Z] POST /api/sessions/login
-[2024-08-14T16:22:16.497Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:22:16.823Z] GET /products
-::1 - [2024-08-14T16:22:54.835Z] POST /api/sessions/login
-[2024-08-14T16:22:54.838Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:22:55.162Z] GET /products
-::1 - [2024-08-14T16:26:35.476Z] POST /api/sessions/login
-[2024-08-14T16:26:35.479Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:26:35.836Z] GET /products
-::1 - [2024-08-14T16:26:38.987Z] GET /users
-::1 - [2024-08-14T16:26:41.900Z] GET /realtimeproducts
-::1 - [2024-08-14T16:26:45.020Z] GET /api/sessions/logout
-[2024-08-14T16:26:45.126Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
-::1 - [2024-08-14T16:26:45.184Z] GET /
-::1 - [2024-08-14T16:26:46.867Z] GET /login
-::1 - [2024-08-14T16:26:55.485Z] POST /api/sessions/login
-[2024-08-14T16:26:55.486Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:26:55.534Z] GET /products
-::1 - [2024-08-14T16:28:44.236Z] GET /users
-::1 - [2024-08-14T16:44:36.069Z] POST /api/sessions/login
-[2024-08-14T16:44:36.072Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:44:36.403Z] GET /products
-::1 - [2024-08-14T16:44:39.125Z] GET /api/sessions/logout
-[2024-08-14T16:44:39.232Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
-::1 - [2024-08-14T16:44:39.292Z] GET /
-::1 - [2024-08-14T16:44:45.284Z] GET /login
-::1 - [2024-08-14T16:45:59.228Z] POST /api/sessions/login
-[2024-08-14T16:45:59.402Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
-::1 - [2024-08-14T16:45:59.716Z] GET /products
-::ffff:127.0.0.1 - [2024-08-14T16:49:27.967Z] GET /login
-::1 - [2024-08-14T16:58:41.420Z] POST /api/sessions/login
-[2024-08-14T16:58:41.422Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
-::1 - [2024-08-14T16:58:42.061Z] GET /products
-::1 - [2024-08-14T16:58:44.756Z] GET /users
-::1 - [2024-08-14T16:58:46.412Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62
-::1 - [2024-08-14T16:58:47.644Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
-::1 - [2024-08-14T16:58:52.731Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62
-::1 - [2024-08-14T16:58:53.627Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
-::1 - [2024-08-14T16:59:11.299Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62
+::1 - [2024-08-14T22:07:28.197Z] GET /users
+::1 - [2024-08-14T22:07:29.674Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:07:29.997Z] GET /users
+::1 - [2024-08-14T22:07:31.059Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:07:31.374Z] GET /users
+::1 - [2024-08-14T22:07:52.221Z] GET /api/sessions/logout
+[2024-08-14T22:07:52.319Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:07:52.367Z] GET /
+::1 - [2024-08-14T22:07:53.332Z] GET /login
+::1 - [2024-08-14T22:08:00.829Z] POST /api/sessions/login
+[2024-08-14T22:08:01.027Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:08:01.076Z] GET /products
+::1 - [2024-08-14T22:08:02.474Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:08:07.886Z] GET /products/detail/661e816c26c8b1e342774c3d
+::1 - [2024-08-14T22:08:11.269Z] GET /products/addcart/661e816c26c8b1e342774c3d
+::1 - [2024-08-14T22:09:07.384Z] GET /products
+::1 - [2024-08-14T22:09:10.339Z] GET /products/detail/661e8e5c26c8b1e342774c43
+::1 - [2024-08-14T22:09:17.035Z] GET /products/addcart/661e8e5c26c8b1e342774c43
+::1 - [2024-08-14T22:10:53.326Z] GET /products
+::1 - [2024-08-14T22:11:03.209Z] GET /api/sessions/logout
+[2024-08-14T22:11:03.210Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T22:11:03.521Z] GET /
+::1 - [2024-08-14T22:11:04.687Z] GET /login
+::1 - [2024-08-14T22:11:19.495Z] GET /login
+::1 - [2024-08-14T22:11:27.008Z] POST /api/sessions/login
+[2024-08-14T22:11:27.009Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:11:27.060Z] GET /products
+::1 - [2024-08-14T22:11:29.792Z] GET /users
+::1 - [2024-08-14T22:11:32.205Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:11:32.551Z] GET /users
+::1 - [2024-08-14T22:11:58.636Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:00.452Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:03.643Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:05.139Z] GET /users
+::1 - [2024-08-14T22:12:06.705Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:07.798Z] GET /users
+::1 - [2024-08-14T22:12:08.881Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:10.303Z] GET /users
+::1 - [2024-08-14T22:12:53.081Z] GET /users
+::1 - [2024-08-14T22:12:54.784Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:55.416Z] GET /users
+::1 - [2024-08-14T22:12:56.433Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:56.753Z] GET /users
+::1 - [2024-08-14T22:12:57.862Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:12:58.180Z] GET /users
+::1 - [2024-08-14T22:13:00.168Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:13:00.472Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:14:11.497Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:14:12.446Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:14:13.342Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:14:17.640Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:14:20.619Z] GET /api/sessions/logout
+[2024-08-14T22:14:20.620Z] El usuario ya cerró su sesión.
+::ffff:127.0.0.1 - [2024-08-14T22:14:20.944Z] GET /
+::ffff:127.0.0.1 - [2024-08-14T22:14:22.433Z] GET /login
+::1 - [2024-08-14T22:14:30.655Z] POST /api/sessions/login
+[2024-08-14T22:14:30.656Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:14:30.706Z] GET /products
+::1 - [2024-08-14T22:14:33.124Z] GET /users
+::1 - [2024-08-14T22:14:36.127Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:14:36.441Z] GET /users
+::1 - [2024-08-14T22:14:46.428Z] GET /users
+::1 - [2024-08-14T22:14:48.382Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:14:48.697Z] GET /users
+::1 - [2024-08-14T22:14:51.161Z] GET /users
+::1 - [2024-08-14T22:15:37.399Z] GET /users
+::1 - [2024-08-14T22:15:38.002Z] GET /users
+::1 - [2024-08-14T22:15:39.551Z] GET /users
+::1 - [2024-08-14T22:15:40.601Z] GET /users
+::1 - [2024-08-14T22:15:44.339Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:15:44.953Z] GET /users
+::1 - [2024-08-14T22:15:48.677Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:15:48.996Z] GET /users
+::1 - [2024-08-14T22:15:51.228Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:15:51.537Z] GET /users
+::1 - [2024-08-14T22:15:54.476Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:15:54.773Z] GET /users
+::1 - [2024-08-14T22:21:02.541Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:21:02.833Z] GET /users
+::1 - [2024-08-14T22:27:50.170Z] GET /api/sessions/logout
+[2024-08-14T22:27:50.172Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T22:27:50.781Z] GET /
+::1 - [2024-08-14T22:27:51.985Z] GET /login
+::1 - [2024-08-14T22:27:59.230Z] POST /api/sessions/login
+[2024-08-14T22:27:59.231Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:27:59.278Z] GET /products
+::1 - [2024-08-14T22:28:01.388Z] GET /users
+::1 - [2024-08-14T22:28:02.754Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:28:02.902Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::1 - [2024-08-14T22:28:04.435Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:28:04.577Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::1 - [2024-08-14T22:28:05.811Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:28:05.964Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::1 - [2024-08-14T22:28:06.234Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:28:06.384Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::ffff:127.0.0.1 - [2024-08-14T22:29:46.452Z] GET /users
+::ffff:127.0.0.1 - [2024-08-14T22:29:50.205Z] POST /api/sessions/login
+[2024-08-14T22:29:50.206Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::ffff:127.0.0.1 - [2024-08-14T22:29:50.509Z] GET /products
+::ffff:127.0.0.1 - [2024-08-14T22:29:52.831Z] GET /users
+::1 - [2024-08-14T22:29:54.792Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:29:55.217Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::1 - [2024-08-14T22:30:08.952Z] GET /users
+::1 - [2024-08-14T22:30:10.732Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+[2024-08-14T22:30:10.878Z] Server error: ReferenceError: Cannot access 'user' before initialization
+::1 - [2024-08-14T22:31:28.618Z] GET /users
+::1 - [2024-08-14T22:31:31.764Z] POST /api/sessions/login
+[2024-08-14T22:31:31.765Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:31:32.084Z] GET /products
+::1 - [2024-08-14T22:31:34.675Z] GET /users
+::1 - [2024-08-14T22:31:37.157Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:31:37.511Z] GET /users
+::1 - [2024-08-14T22:31:38.524Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:31:38.811Z] GET /users
+::1 - [2024-08-14T22:31:39.435Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:31:39.727Z] GET /users
+::1 - [2024-08-14T22:31:40.387Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:31:40.705Z] GET /users
+::1 - [2024-08-14T22:31:41.333Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:31:41.642Z] GET /users
+::1 - [2024-08-14T22:31:43.122Z] DELETE /api/users/66bd1f76dd7ecdec1b8ec055
+[2024-08-14T22:31:46.288Z] Server error: No se pudo eliminar el usuario '66bd1f76dd7ecdec1b8ec055'
+::1 - [2024-08-14T22:31:56.686Z] GET /users
+::1 - [2024-08-14T22:33:49.888Z] GET /api/sessions/logout
+[2024-08-14T22:33:49.890Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T22:33:50.211Z] GET /
+::1 - [2024-08-14T22:33:51.571Z] GET /login
+::1 - [2024-08-14T22:33:52.590Z] GET /api/sessions/github
+::1 - [2024-08-14T22:33:53.643Z] GET /api/sessions/githubcallback
+::1 - [2024-08-14T22:33:55.367Z] GET /products
+::1 - [2024-08-14T22:33:57.314Z] GET /api/sessions/logout
+[2024-08-14T22:33:57.416Z] Success: El usuario 'brunopanozzo@hotmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:33:57.465Z] GET /
+::1 - [2024-08-14T22:33:58.799Z] GET /login
+::1 - [2024-08-14T22:34:05.926Z] POST /api/sessions/login
+[2024-08-14T22:34:05.926Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:34:05.975Z] GET /products
+::1 - [2024-08-14T22:34:08.731Z] GET /users
+::1 - [2024-08-14T22:34:10.721Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:34:11.052Z] GET /users
+::1 - [2024-08-14T22:34:12.062Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:34:12.365Z] GET /users
+::1 - [2024-08-14T22:34:15.112Z] DELETE /api/users/66bd30d3ee3f1aca30e97163
+[2024-08-14T22:34:18.315Z] Server error: TypeError: Cannot read properties of null (reading 'email')
+::1 - [2024-08-14T22:34:23.758Z] GET /users
+::1 - [2024-08-14T22:36:06.467Z] GET /api/sessions/logout
+[2024-08-14T22:36:06.470Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T22:36:06.789Z] GET /
+::1 - [2024-08-14T22:36:08.061Z] GET /login
+::1 - [2024-08-14T22:36:09.229Z] GET /api/sessions/github
+::1 - [2024-08-14T22:36:09.918Z] GET /api/sessions/githubcallback
+::1 - [2024-08-14T22:36:11.374Z] GET /products
+::1 - [2024-08-14T22:36:12.785Z] GET /api/sessions/logout
+[2024-08-14T22:36:12.889Z] Success: El usuario 'brunopanozzo@hotmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:36:12.937Z] GET /
+::1 - [2024-08-14T22:36:13.982Z] GET /login
+::1 - [2024-08-14T22:36:21.129Z] POST /api/sessions/login
+[2024-08-14T22:36:21.130Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:36:21.180Z] GET /products
+::1 - [2024-08-14T22:36:22.922Z] GET /users
+::1 - [2024-08-14T22:36:25.516Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:36:25.853Z] GET /users
+::1 - [2024-08-14T22:36:26.529Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:36:27.096Z] GET /users
+::1 - [2024-08-14T22:36:28.114Z] PUT /api/users/premium/66bd315b162258022c272e07
+::1 - [2024-08-14T22:36:29.850Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:36:30.169Z] GET /users
+::1 - [2024-08-14T22:36:30.857Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:36:31.171Z] GET /users
+::1 - [2024-08-14T22:36:33.574Z] DELETE /api/users/66bd315b162258022c272e07
+::1 - [2024-08-14T22:36:36.578Z] GET /users
+::1 - [2024-08-14T22:36:53.995Z] GET /products/detail/661e819126c8b1e342774c40
+::1 - [2024-08-14T22:36:57.674Z] GET /realtimeproducts
+::1 - [2024-08-14T22:37:02.528Z] DELETE /api/products/66b9f8452adcb99db8a93caf
+[2024-08-14T22:37:02.674Z] Success: El producto con código '66b9f8452adcb99db8a93caf' se eliminó exitosamente.
+::1 - [2024-08-14T22:37:02.728Z] GET /realtimeproducts
+::1 - [2024-08-14T22:37:04.250Z] GET /realtimeproducts
+::1 - [2024-08-14T22:37:14.405Z] GET /realtimeproducts
+::1 - [2024-08-14T22:37:15.699Z] GET /products/create/
+::1 - [2024-08-14T22:37:25.092Z] POST /api/products/create
+[2024-08-14T22:37:25.191Z] Success: 66bd31a5162258022c272e9d
+::1 - [2024-08-14T22:37:29.203Z] POST /api/products/create
+[2024-08-14T22:37:29.248Z] Server error: InvalidProductData: Error trying to create a new product
+::1 - [2024-08-14T22:37:35.852Z] GET /realtimeproducts
+::1 - [2024-08-14T22:37:57.624Z] POST /api/sessions/login
+::1 - [2024-08-14T22:38:07.016Z] POST /api/sessions/login
+[2024-08-14T22:38:07.017Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:38:07.064Z] GET /products
+::1 - [2024-08-14T22:38:10.518Z] GET /realtimeproducts
+::1 - [2024-08-14T22:38:16.978Z] GET /api/sessions/logout
+[2024-08-14T22:38:17.075Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:38:17.126Z] GET /
+::1 - [2024-08-14T22:38:18.266Z] GET /login
+::1 - [2024-08-14T22:38:24.641Z] POST /api/sessions/login
+[2024-08-14T22:38:24.805Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:38:24.853Z] GET /products
+::1 - [2024-08-14T22:38:28.549Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:38:33.382Z] GET /api/sessions/logout
+[2024-08-14T22:38:33.485Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:38:33.540Z] GET /
+::1 - [2024-08-14T22:38:34.888Z] GET /login
+::1 - [2024-08-14T22:38:41.027Z] POST /api/sessions/login
+[2024-08-14T22:38:41.219Z] Success: El usuario 'juanperezcoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:38:41.265Z] GET /products
+::1 - [2024-08-14T22:38:42.464Z] GET /carts/66bcc0be20f6274cd3048f60
+::1 - [2024-08-14T22:38:47.559Z] GET /products/detail/661f255da2c078c3c8eb6fb9
+::1 - [2024-08-14T22:38:48.751Z] GET /products/addcart/661f255da2c078c3c8eb6fb9
+::1 - [2024-08-14T22:38:53.320Z] GET /products/addcart/661f255da2c078c3c8eb6fb9
+::1 - [2024-08-14T22:38:57.718Z] GET /products
+::1 - [2024-08-14T22:38:59.736Z] GET /carts/66bcc0be20f6274cd3048f60
+::1 - [2024-08-14T22:39:06.647Z] GET /products/detail/661f2573a2c078c3c8eb6fbc
+::1 - [2024-08-14T22:39:07.897Z] GET /products/addcart/661f2573a2c078c3c8eb6fbc
+::1 - [2024-08-14T22:39:12.338Z] GET /carts/66bcc0be20f6274cd3048f60
+::1 - [2024-08-14T22:39:28.006Z] GET /api/sessions/logout
+[2024-08-14T22:39:28.116Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:39:28.172Z] GET /
+::1 - [2024-08-14T22:39:29.613Z] GET /login
+::1 - [2024-08-14T22:39:40.223Z] POST /api/sessions/login
+[2024-08-14T22:39:40.414Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:39:40.460Z] GET /products
+::1 - [2024-08-14T22:39:42.855Z] GET /api/sessions/logout
+[2024-08-14T22:39:42.955Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:39:43.014Z] GET /
+::1 - [2024-08-14T22:39:50.876Z] GET /login
+::1 - [2024-08-14T22:40:01.982Z] POST /api/sessions/login
+[2024-08-14T22:40:01.982Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T22:40:02.028Z] GET /products
+::1 - [2024-08-14T22:40:04.372Z] GET /users
+::1 - [2024-08-14T22:40:06.251Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T22:40:06.559Z] GET /users
+::1 - [2024-08-14T22:40:08.860Z] GET /api/sessions/logout
+[2024-08-14T22:40:08.961Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:40:09.011Z] GET /
+::1 - [2024-08-14T22:40:10.139Z] GET /login
+::1 - [2024-08-14T22:40:16.517Z] POST /api/sessions/login
+[2024-08-14T22:40:16.709Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:40:16.758Z] GET /products
+::1 - [2024-08-14T22:40:21.099Z] GET /realtimeproducts
+::1 - [2024-08-14T22:40:25.572Z] GET /products/create/
+::1 - [2024-08-14T22:40:34.489Z] POST /api/products/create
+[2024-08-14T22:40:34.592Z] Success: 66bd3262162258022c272f12
+::1 - [2024-08-14T22:40:39.319Z] POST /api/products/create
+[2024-08-14T22:40:39.365Z] Server error: InvalidProductData: Error trying to create a new product
+::1 - [2024-08-14T22:40:42.970Z] GET /realtimeproducts
+::1 - [2024-08-14T22:41:01.153Z] POST /api/sessions/login
+[2024-08-14T22:41:01.349Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T22:41:01.396Z] GET /products
+::1 - [2024-08-14T22:41:03.420Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:41:09.331Z] GET /products/detail/66bd3262162258022c272f12
+::1 - [2024-08-14T22:41:10.803Z] GET /products/addcart/66bd3262162258022c272f12
+[2024-08-14T22:41:10.984Z] Server error: InvalidAction: Error trying to add a product to a cart
+::1 - [2024-08-14T22:41:17.594Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:41:23.775Z] GET /products
+::1 - [2024-08-14T22:41:26.226Z] GET /products/detail/66bd31a5162258022c272e9d
+::1 - [2024-08-14T22:41:27.581Z] GET /products/addcart/66bd31a5162258022c272e9d
+::1 - [2024-08-14T22:41:31.603Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:41:37.089Z] GET /products
+::1 - [2024-08-14T22:41:39.657Z] GET /products/detail/66bd3262162258022c272f12
+::1 - [2024-08-14T22:41:42.046Z] GET /products/addcart/66bd3262162258022c272f12
+[2024-08-14T22:41:42.226Z] Server error: InvalidAction: Error trying to add a product to a cart
+::1 - [2024-08-14T22:41:45.240Z] GET /carts/66bcc0ef20f6274cd3048f6f
+::1 - [2024-08-14T22:41:55.872Z] GET /realtimeproducts
+::1 - [2024-08-14T22:41:59.751Z] DELETE /api/products/66bd31a5162258022c272e9d
+[2024-08-14T22:41:59.840Z] Unauthorization error: El usuario 'martingarciacoder@gmail.com' no puede borrar el producto 'tyry' porque no es su owner.
+::1 - [2024-08-14T22:41:59.892Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:01.779Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:03.476Z] DELETE /api/products/66bd31a5162258022c272e9d
+[2024-08-14T22:42:03.845Z] Unauthorization error: El usuario 'martingarciacoder@gmail.com' no puede borrar el producto 'tyry' porque no es su owner.
+::1 - [2024-08-14T22:42:03.899Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:04.354Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:05.488Z] DELETE /api/products/66bd31a5162258022c272e9d
+[2024-08-14T22:42:05.579Z] Unauthorization error: El usuario 'martingarciacoder@gmail.com' no puede borrar el producto 'tyry' porque no es su owner.
+::1 - [2024-08-14T22:42:05.635Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:06.091Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:06.919Z] DELETE /api/products/66bd3262162258022c272f12
+[2024-08-14T22:42:07.070Z] Success: El producto con código '66bd3262162258022c272f12' se eliminó exitosamente.
+::1 - [2024-08-14T22:42:07.141Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:07.802Z] GET /realtimeproducts
+::1 - [2024-08-14T22:42:11.447Z] GET /api/sessions/logout
+[2024-08-14T22:42:11.554Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T22:42:11.601Z] GET /

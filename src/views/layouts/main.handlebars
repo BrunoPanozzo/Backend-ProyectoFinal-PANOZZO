@@ -27,11 +27,12 @@
         crossorigin="anonymous"></script>
 
     {{!-- incluir librería sweetalert si es necesario --}}
-    {{#if useSweetAlert }}
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    {{/if}}
+    {{!-- {{#if useSweetAlert }} --}}
+    {{!-- {{/if}} --}}
 
     {{#if alertMessage}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         Swal.fire({
             title: '{{alertMessage.title}}',
