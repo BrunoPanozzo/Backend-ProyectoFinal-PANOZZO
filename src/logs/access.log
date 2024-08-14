@@ -645,3 +645,132 @@
 ::1 - [2024-08-13T15:44:20.556Z] GET /api/sessions/logout
 [2024-08-13T15:44:20.663Z] Success: El usuario 'brunopanozzo@hotmail.com' se deslogueó exitosamente.
 ::1 - [2024-08-13T15:44:20.711Z] GET /
+::1 - [2024-08-14T14:04:36.370Z] GET /login
+::1 - [2024-08-14T14:04:36.559Z] GET /favicon.ico
+::1 - [2024-08-14T14:35:13.632Z] GET /register
+::1 - [2024-08-14T14:35:42.652Z] POST /api/sessions/register
+[2024-08-14T14:35:43.041Z] Success: El usuario 'juanperezcoder@gmail.com' se registró exitosamente.
+::1 - [2024-08-14T14:35:43.417Z] GET /login
+::1 - [2024-08-14T14:36:06.219Z] POST /api/sessions/login
+[2024-08-14T14:36:06.425Z] Success: El usuario 'juanperezcoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T14:36:06.517Z] GET /products
+::1 - [2024-08-14T14:36:09.138Z] GET /api/sessions/logout
+[2024-08-14T14:36:09.245Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T14:36:09.293Z] GET /
+::1 - [2024-08-14T14:36:10.802Z] GET /register
+::1 - [2024-08-14T14:36:31.572Z] POST /api/sessions/register
+[2024-08-14T14:36:31.925Z] Success: El usuario 'martingarciacoder@gmail.com' se registró exitosamente.
+::1 - [2024-08-14T14:36:32.018Z] GET /login
+::1 - [2024-08-14T14:37:01.906Z] POST /api/sessions/login
+[2024-08-14T14:37:02.067Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T14:37:02.165Z] GET /products
+::1 - [2024-08-14T14:37:06.078Z] GET /api/sessions/logout
+[2024-08-14T14:37:06.189Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-14T14:37:06.242Z] GET /
+::ffff:172.24.104.26 - [2024-08-14T15:08:11.211Z] POST /api/users/66a2acdf2be8106b801ecac0/documents
+[2024-08-14T15:08:11.263Z] Server error: UploadFileFailed: Error trying to load a file
+::ffff:172.24.104.26 - [2024-08-14T15:08:58.500Z] POST /api/users/66bcc0ef20f6274cd3048f71/documents
+[2024-08-14T15:08:58.837Z] Success: Se cargaron nuevos archivos para el usuario '66bcc0ef20f6274cd3048f71'.
+::1 - [2024-08-14T15:30:40.628Z] GET /register
+::1 - [2024-08-14T15:30:45.507Z] GET /login
+::1 - [2024-08-14T15:30:55.635Z] GET /login
+::1 - [2024-08-14T15:31:06.293Z] POST /api/sessions/login
+[2024-08-14T15:31:06.293Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T15:31:06.341Z] GET /products
+::1 - [2024-08-14T15:39:42.428Z] GET /api/sessions/logout
+[2024-08-14T15:39:42.429Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+::1 - [2024-08-14T15:39:47.804Z] POST /api/sessions/login
+[2024-08-14T15:39:47.804Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T15:39:47.852Z] GET /products
+::1 - [2024-08-14T15:41:27.070Z] GET /login
+::1 - [2024-08-14T15:41:40.620Z] POST /api/sessions/login
+[2024-08-14T15:41:40.621Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T15:41:40.944Z] GET /products
+::1 - [2024-08-14T15:41:43.882Z] GET /products
+::1 - [2024-08-14T15:41:45.612Z] GET /products
+::1 - [2024-08-14T15:41:46.826Z] GET /products
+::1 - [2024-08-14T15:41:48.113Z] GET /products
+::1 - [2024-08-14T15:41:49.401Z] GET /products
+::1 - [2024-08-14T15:41:50.576Z] GET /products
+::1 - [2024-08-14T15:41:51.682Z] GET /products
+::1 - [2024-08-14T15:41:52.607Z] GET /products
+::1 - [2024-08-14T15:41:53.783Z] GET /products
+::1 - [2024-08-14T15:41:55.869Z] GET /products
+::1 - [2024-08-14T15:41:57.190Z] GET /products
+::1 - [2024-08-14T15:41:58.045Z] GET /products
+::1 - [2024-08-14T15:41:58.904Z] GET /products
+::1 - [2024-08-14T15:41:59.623Z] GET /products
+::1 - [2024-08-14T15:42:00.311Z] GET /products
+::1 - [2024-08-14T15:42:00.775Z] GET /products
+::1 - [2024-08-14T15:42:01.250Z] GET /products
+::1 - [2024-08-14T15:42:01.685Z] GET /products
+::1 - [2024-08-14T15:42:02.045Z] GET /products
+::1 - [2024-08-14T15:42:02.302Z] GET /products
+::1 - [2024-08-14T15:42:02.581Z] GET /products
+::1 - [2024-08-14T15:42:02.829Z] GET /products
+::1 - [2024-08-14T15:42:03.436Z] GET /products
+::1 - [2024-08-14T15:42:04.084Z] GET /products
+::1 - [2024-08-14T15:42:04.830Z] GET /realtimeproducts
+::1 - [2024-08-14T15:42:06.187Z] GET /products/create/
+::1 - [2024-08-14T15:42:09.405Z] GET /carts/
+::1 - [2024-08-14T15:42:13.239Z] GET /carts/
+::1 - [2024-08-14T15:42:18.837Z] GET /carts/
+::1 - [2024-08-14T15:42:21.293Z] GET /profile
+::1 - [2024-08-14T15:42:22.764Z] GET /
+::1 - [2024-08-14T15:44:58.911Z] GET /api/sessions/logout
+[2024-08-14T15:44:58.914Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+::1 - [2024-08-14T15:45:01.548Z] GET /api/sessions/logout
+[2024-08-14T15:45:01.549Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+::1 - [2024-08-14T15:53:14.231Z] GET /api/sessions/logout
+[2024-08-14T15:53:14.231Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+::ffff:127.0.0.1 - [2024-08-14T15:53:22.573Z] GET /api/sessions/logout
+[2024-08-14T15:53:22.576Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T15:53:22.881Z] GET /
+::1 - [2024-08-14T15:53:28.330Z] GET /users
+::1 - [2024-08-14T15:53:41.755Z] GET /api/sessions/logout
+[2024-08-14T15:53:41.755Z] El usuario ya cerró su sesión.
+::1 - [2024-08-14T15:53:41.805Z] GET /
+::1 - [2024-08-14T15:54:00.459Z] GET /login
+::1 - [2024-08-14T15:54:09.258Z] POST /api/sessions/login
+[2024-08-14T15:54:09.259Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T15:54:09.307Z] GET /products
+::1 - [2024-08-14T16:11:02.411Z] GET /realtimeproducts
+::1 - [2024-08-14T16:22:16.494Z] POST /api/sessions/login
+[2024-08-14T16:22:16.497Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:22:16.823Z] GET /products
+::1 - [2024-08-14T16:22:54.835Z] POST /api/sessions/login
+[2024-08-14T16:22:54.838Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:22:55.162Z] GET /products
+::1 - [2024-08-14T16:26:35.476Z] POST /api/sessions/login
+[2024-08-14T16:26:35.479Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:26:35.836Z] GET /products
+::1 - [2024-08-14T16:26:38.987Z] GET /users
+::1 - [2024-08-14T16:26:41.900Z] GET /realtimeproducts
+::1 - [2024-08-14T16:26:45.020Z] GET /api/sessions/logout
+[2024-08-14T16:26:45.126Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-14T16:26:45.184Z] GET /
+::1 - [2024-08-14T16:26:46.867Z] GET /login
+::1 - [2024-08-14T16:26:55.485Z] POST /api/sessions/login
+[2024-08-14T16:26:55.486Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:26:55.534Z] GET /products
+::1 - [2024-08-14T16:28:44.236Z] GET /users
+::1 - [2024-08-14T16:44:36.069Z] POST /api/sessions/login
+[2024-08-14T16:44:36.072Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:44:36.403Z] GET /products
+::1 - [2024-08-14T16:44:39.125Z] GET /api/sessions/logout
+[2024-08-14T16:44:39.232Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-14T16:44:39.292Z] GET /
+::1 - [2024-08-14T16:44:45.284Z] GET /login
+::1 - [2024-08-14T16:45:59.228Z] POST /api/sessions/login
+[2024-08-14T16:45:59.402Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-14T16:45:59.716Z] GET /products
+::ffff:127.0.0.1 - [2024-08-14T16:49:27.967Z] GET /login
+::1 - [2024-08-14T16:58:41.420Z] POST /api/sessions/login
+[2024-08-14T16:58:41.422Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-14T16:58:42.061Z] GET /products
+::1 - [2024-08-14T16:58:44.756Z] GET /users
+::1 - [2024-08-14T16:58:46.412Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62
+::1 - [2024-08-14T16:58:47.644Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T16:58:52.731Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62
+::1 - [2024-08-14T16:58:53.627Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-14T16:59:11.299Z] PUT /api/users/premium/66bcc0be20f6274cd3048f62

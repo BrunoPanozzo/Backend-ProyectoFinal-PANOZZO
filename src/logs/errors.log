@@ -34,3 +34,8 @@
 [2024-08-13T15:40:41.641Z] Server error: TypeError: Cannot read properties of undefined (reading '_id')
 [2024-08-13T15:44:10.782Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
 [2024-08-13T15:44:12.667Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+[2024-08-14T15:08:11.263Z] Server error: UploadFileFailed: Error trying to load a file
+[2024-08-14T15:39:42.429Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+[2024-08-14T15:44:58.915Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+[2024-08-14T15:45:01.549Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')
+[2024-08-14T15:53:14.231Z] Server error: TypeError: Cannot read properties of undefined (reading 'email')

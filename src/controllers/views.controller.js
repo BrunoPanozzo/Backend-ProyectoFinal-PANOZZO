@@ -27,7 +27,9 @@ class ViewsController {
             const filteredProducts = await this.productsService.getProducts(req.query)
 
             let user = req.session.user
-            let isNotAdmin = ![ADMIN, USER_PREMIUM, SUPER_ADMIN].includes(req.session.user.rol)
+            let isAdmin = [ADMIN].includes(req.session.user.rol)      
+            let isPremium = [USER_PREMIUM].includes(req.session.user.rol)
+
             const data = {
                 title: 'All Products',
                 scripts: ['allProducts.js'],
@@ -35,7 +37,8 @@ class ViewsController {
                 useWS: false,
                 user,
                 filteredProducts,
-                isNotAdmin
+                isAdmin, 
+                isPremium                
             }
 
             res.render('allProducts', data)

@@ -10,18 +10,31 @@
         <a href="/profile">
             <button type="submit" class="btn btn-info text-decoration text-center">Mi Perfil</button>
         </a>
-        {{!-- {{#if isNotAdmin }} --}}
+        {{#if isAdmin }}
+        <a href="/users">
+            <button type="submit" class="btn btn-info text-decoration text-center">Usuarios</button>
+        </a>
+        <a href="/realtimeproducts">
+            <button type="submit" class="btn btn-info text-decoration text-center">Editar mi tienda</button>
+        </a>        
+        {{else if isPremium }}
         <a href="/carts/{{user.cart}}">
             <button type="submit" class="btn btn-info text-decoration text-center">Mi Carrito</button>
         </a>
-        {{!-- {{else}} --}}
         <a href="/realtimeproducts">
             <button type="submit" class="btn btn-info text-decoration text-center">Editar mi tienda</button>
+        </a>  
+        {{else}}
+         <a href="/carts/{{user.cart}}">
+            <button type="submit" class="btn btn-info text-decoration text-center">Mi Carrito</button>
         </a>
-        {{!-- {{/if}} --}}
+        {{/if}}
         <a href="/api/sessions/logout">
             <button type="submit" class="btn btn-info text-decoration text-center">Logout</button>
         </a>
+        
+        {{!-- <button onclick="history.back()" class="btn btn-info text-decoration text-center">Volver</button> --}}
+       
     </div>
 </div>
 <div class="text-center mb-1">

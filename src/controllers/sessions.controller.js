@@ -37,7 +37,7 @@ class SessionsController {
             //return res.sendSuccess(req.user._id)
             req.logger.info(`Success: El usuario '${req.session.user.email}' se logueó exitosamente.`)
             res.status(200);
-            res.redirect('/products')            
+            res.redirect('/products')
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
@@ -182,16 +182,24 @@ class SessionsController {
 
     async logout(req, res) {
         try {
-            const email = req.session.user.email
-            await this.sessionsService.logout(req.session.user)
-            const userId = req.session.user._id
-            req.session.destroy(_ => {
-                //res.redirect('/')
-                //res.sendSuccess(userId)
-                req.logger.info(`Success: El usuario '${email}' se deslogueó exitosamente.`)
-                res.status(200);
-                res.redirect('/')
-            })
+            if (req.session.user) {
+                const email = req.session.user.email
+                await this.sessionsService.logout(req.session.user)
+                const userId = req.session.user._id
+                req.session.destroy(_ => {
+                    //res.redirect('/')
+                    //res.sendSuccess(userId)
+                    req.logger.info(`Success: El usuario '${email}' se deslogueó exitosamente.`)
+                    res.status(200);
+                    res.redirect('/')
+                })
+            }
+            else {
+                req.logger.info(`El usuario ya cerró su sesión.`)
+                    res.status(200);
+                    res.redirect('/')
+            }
+
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
