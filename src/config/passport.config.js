@@ -159,7 +159,7 @@ const initializeStrategy = () => {
         }
     }))
 
-    
+
     const URL = process.env.NODE_ENV == 'production'
         ? process.env.URL_DEPLOY
         : "localhost"
@@ -170,7 +170,7 @@ const initializeStrategy = () => {
 
     const clientID = config.CLIENT_ID || "Iv1.6d669ffe54ac6555"
     const clientSecret = config.CLIENT_SECRET || "28cf37c5290e1cb5ccbc9138c679536918cdef49"
-    const callbackURL = CALLBACK_URL 
+    const callbackURL = "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback" //CALLBACK_URL 
     passport.use('github', new GithubStrategy({
         clientID: clientID,
         clientSecret: clientSecret,
