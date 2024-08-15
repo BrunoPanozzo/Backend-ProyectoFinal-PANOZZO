@@ -6,7 +6,7 @@ const storage = MongoStore.create({
     dbName: DBNAME,
     mongoUrl: MONGO_URL,
     ttl: 60
-})
+}) 
 
 module.exports = session({
     store: storage,
