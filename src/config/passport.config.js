@@ -159,22 +159,10 @@ const initializeStrategy = () => {
         }
     }))
 
-
-    const URL = process.env.NODE_ENV == 'production'
-        ? process.env.URL_DEPLOY
-        : "localhost"
-
-    const CALLBACK_URL = process.env.NODE_ENV == 'production'
-        ? `${URL}:8080/api/sessions/githubcallback`
-        : process.env.CALLBACK_URL
-
-    const clientID = config.CLIENT_ID || "Iv1.6d669ffe54ac6555"
-    const clientSecret = config.CLIENT_SECRET || "28cf37c5290e1cb5ccbc9138c679536918cdef49"
-    const callbackURL = "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback" //CALLBACK_URL 
     passport.use('github', new GithubStrategy({
-        clientID: clientID,
-        clientSecret: clientSecret,
-        callbackURL: callbackURL
+        clientID: config.CLIENT_ID,
+        clientSecret: config.CLIENT_SECRET,
+        callbackURL: config.CALLBACK_URL
     }, async (_accessToken, _refreshToken, profile, done) => {
         try {
             //const user = await userModel.findOne({ email: profile._json.email })

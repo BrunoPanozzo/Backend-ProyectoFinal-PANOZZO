@@ -93,10 +93,10 @@ class SessionsController {
             if (email) {
                 try {
                     const URL = process.env.NODE_ENV == 'production'
-                        ? process.env.URL_DEPLOY
-                        : "localhost"
+                        ? "backend-proyectofinal-panozzo-production.up.railway.app"
+                        : "localhost:8080"
                     const token = jwt.sign({ email }, SECRET, { expiresIn: '1h' })
-                    const resetLink = `http://${URL}:8080/reset_password/${email}/token/${token}`
+                    const resetLink = `http://${URL}/reset_password/${email}/token/${token}`
                     await transport.sendMail({
                         from: GMAIL_ACCOUNT,
                         to: `${email}`,
