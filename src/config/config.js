@@ -19,5 +19,6 @@ module.exports = {
     ADMIN_USER:process.env.ADMIN_USER,
     ADMIN_USER_PASS:process.env.ADMIN_USER_PASS,
     GMAIL_ACCOUNT:process.env.GMAIL_ACCOUNT,
-    GMAIL_PASSWORD:process.env.GMAIL_PASSWORD
+    GMAIL_PASSWORD:process.env.GMAIL_PASSWORD,
+    URL_DEPLOY:process.env.URL_DEPLOY
 }

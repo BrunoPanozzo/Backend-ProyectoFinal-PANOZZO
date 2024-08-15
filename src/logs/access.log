@@ -281,3 +281,7 @@
 ::1 - [2024-08-14T22:42:11.601Z] GET /
 ::1 - [2024-08-15T00:40:22.816Z] GET /
 ::1 - [2024-08-15T00:40:25.702Z] GET /login
+::1 - [2024-08-15T14:14:04.373Z] GET /api/sessions/githubcallback
+[2024-08-15T14:14:04.800Z] Fatal error: Error
+::1 - [2024-08-15T15:27:39.907Z] GET /api/sessions/githubcallback
+[2024-08-15T15:27:40.344Z] Fatal error: Error

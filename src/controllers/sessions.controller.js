@@ -92,8 +92,11 @@ class SessionsController {
             const { email } = req.body
             if (email) {
                 try {
+                    const URL = process.env.NODE_ENV == 'production'
+                        ? process.env.URL_DEPLOY
+                        : "localhost"
                     const token = jwt.sign({ email }, SECRET, { expiresIn: '1h' })
-                    const resetLink = `http://localhost:8080/reset_password/${email}/token/${token}`
+                    const resetLink = `http://${URL}:8080/reset_password/${email}/token/${token}`
                     await transport.sendMail({
                         from: GMAIL_ACCOUNT,
                         to: `${email}`,
@@ -196,8 +199,8 @@ class SessionsController {
             }
             else {
                 req.logger.info(`El usuario ya cerró su sesión.`)
-                    res.status(200);
-                    res.redirect('/')
+                res.status(200);
+                res.redirect('/')
             }
 
         }

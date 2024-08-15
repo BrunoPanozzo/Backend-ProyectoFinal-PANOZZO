@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByClassName("btn-deleteOldUsers")
     // Convertir la coleccion a un array para que sea mas facil manipularla
-    const allDeleteButtons = Array.from(buttons);
+    const allDeleteButtons = Array.from(buttons)    
     allDeleteButtons.forEach(btn => {
         btn.addEventListener("click", function () {  
-            fetch(`http://localhost:8080/api/users/`, {
+            fetch(`/api/users/`, {
                 method: 'DELETE'
             })
                 .then((result) => {

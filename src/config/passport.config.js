@@ -43,7 +43,7 @@ const initializeStrategy = () => {
     }, async (req, username, password, done) => {  //esta es el callback donde se especifica cómo se debe registrar un user
         const { firstName, lastName, email, age } = req.body
 
-        try {      
+        try {
             // user = await userModel.findOne({ email: username })
             const userAlreadyExists = await userDAO.login({ email: username })
             if (userAlreadyExists) {
@@ -58,7 +58,7 @@ const initializeStrategy = () => {
                 lastName,
                 email,
                 age: + age,
-                
+
                 password: hashPassword(password),
                 cart: newCart
             }
@@ -83,7 +83,7 @@ const initializeStrategy = () => {
                 // return res.status(400).json({ error: 'Credenciales inválidas!' })
                 return done(null, false, 'Credenciales inválidas!')
             }
-            
+
             //verifico si es el usuario "ADMIN"
             let logedUser
             if (username === config.ADMIN_USER && password === config.ADMIN_USER_PASS) {
@@ -159,11 +159,19 @@ const initializeStrategy = () => {
         }
     }))
 
+    const URL = process.env.NODE_ENV == 'production'
+        ? process.env.URL_DEPLOY
+        : "localhost"
+
+    const CALLBACK_URL = process.env.NODE_ENV == 'production'
+        ? `${URL}:8080/api/sessions/githubcallback`
+        : process.env.CALLBACK_URL
+
     const clientID = config.CLIENT_ID || "Iv1.6d669ffe54ac6555"
     const clientSecret = config.CLIENT_SECRET || "28cf37c5290e1cb5ccbc9138c679536918cdef49"
-    const callbackURL = config.CALLBACK_URL || "http://localhost:8080/api/sessions/githubcallback"
+    const callbackURL = CALLBACK_URL 
     passport.use('github', new GithubStrategy({
-        clientID: clientID, 
+        clientID: clientID,
         clientSecret: clientSecret,
         callbackURL: callbackURL
     }, async (_accessToken, _refreshToken, profile, done) => {
@@ -196,7 +204,7 @@ const initializeStrategy = () => {
             done(err)
         }
     }))
-    
+
     // passport.use('google', new GoogleStrategy({
     //     clientID: config.CLIENT_ID_GOOGLE,
     //     clientSecret: config.CLIENT_SECRET_GOOGLE ,

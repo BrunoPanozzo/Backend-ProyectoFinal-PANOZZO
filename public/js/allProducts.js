@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.getElementsByClassName("btn-eliminarItem")
     // Convertir la coleccion a un array para que sea mas facil manipularla
-    const allDeleteButtons = Array.from(buttons);
+    const allDeleteButtons = Array.from(buttons)    
     allDeleteButtons.forEach(btn => {
         btn.addEventListener("click", function () {
             //alert(`${btn.id} clicked`);  
             // socket.emit('deleteProduct', `${btn.id}`)
-            fetch(`http://localhost:8080/api/products/${btn.id}`, {
-                method: 'DELETE'
+            //fetch(`http://${URL}:8080/api/products/${btn.id}`, {
+            fetch(`/api/products/${btn.id}`, {
+                    method: 'DELETE'
             })
                 .then(() => {
-                    fetch(`http://localhost:8080/realtimeproducts`, {
+                    fetch(`/realtimeproducts`, {
                         method: 'GET'
                     })
                 })
