@@ -91,10 +91,11 @@ const main = async () => {
     let httpServer
 
     //configurar mongoose
+    const port = PORT || 8080
     await mongoose.connect(MONGO_URL, { dbName: DBNAME })
         .then(() => {
             //crear un servidor HTTP
-            httpServer = app.listen(PORT, () => {
+            httpServer = app.listen(port, () => {
                 console.log(`Servidor listo escuchando en el puerto ${PORT}`)
             });
 
