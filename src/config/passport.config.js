@@ -159,10 +159,13 @@ const initializeStrategy = () => {
         }
     }))
 
+    const client_ID = config.CLIENT_ID || 'Iv1.6d669ffe54ac6555'
+    const client_SECRET = config.CLIENT_SECRET || '28cf37c5290e1cb5ccbc9138c679536918cdef49'
+    const callback_URL = config.CALLBACK_URL || 'http://localhost:8080/api/sessions/githubcallback'
     passport.use('github', new GithubStrategy({
-        clientID: config.CLIENT_ID,
-        clientSecret: config.CLIENT_SECRET,
-        callbackURL: config.CALLBACK_URL
+        clientID: client_ID,
+        clientSecret: client_SECRET,
+        callbackURL: callback_URL
     }, async (_accessToken, _refreshToken, profile, done) => {
         try {
             //const user = await userModel.findOne({ email: profile._json.email })

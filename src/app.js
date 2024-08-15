@@ -96,7 +96,7 @@ const main = async () => {
         .then(() => {
             //crear un servidor HTTP
             httpServer = app.listen(port, () => {
-                console.log(`Servidor listo escuchando en el puerto ${PORT}`)
+                console.log(`Servidor listo escuchando en el puerto ${port}`)
             });
 
         })
