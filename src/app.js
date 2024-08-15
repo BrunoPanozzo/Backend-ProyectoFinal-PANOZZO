@@ -92,7 +92,9 @@ const main = async () => {
 
     //configurar mongoose
     const port = PORT || 8080
-    await mongoose.connect(MONGO_URL, { dbName: DBNAME })
+    const mongo_URL = MONGO_URL || 'mongodb+srv://coderUser:coderPassword@coderclustertest.y46cxod.mongodb.net/?retryWrites=true&w=majority&appName=CoderClustertest'
+    const mongo_DBNAME = DBNAME || 'ecommerce'
+    await mongoose.connect(mongo_URL, { dbName: mongo_DBNAME })
         .then(() => {
             //crear un servidor HTTP
             httpServer = app.listen(port, () => {
