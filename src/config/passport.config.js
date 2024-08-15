@@ -197,13 +197,10 @@ const initializeStrategy = () => {
         }
     }))
     
-    // const clientIDGoogle = config.CLIENT_ID_GOOGLE || "532470277181-3dlmskno7tfsppr6fglo0q1382tg3pqc.apps.googleusercontent.com"
-    // const clientSecretGoogle = config.CLIENT_SECRET_GOOGLE || "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"
-    // const callbackURLGoogle = config.CALLBACK_URL_GOOGLE || "http://localhost:8080/api/sessions/googlecallback"
     // passport.use('google', new GoogleStrategy({
-    //     clientID: clientIDGoogle,
-    //     clientSecret: clientSecretGoogle,
-    //     callbackURL: callbackURLGoogle
+    //     clientID: config.CLIENT_ID_GOOGLE,
+    //     clientSecret: config.CLIENT_SECRET_GOOGLE ,
+    //     callbackURL: config.CALLBACK_URL_GOOGLE
     // }, async (_accessToken, _refreshToken, profile, done) => {
     //     try {
     //         const email = profile.emails[0].value;
