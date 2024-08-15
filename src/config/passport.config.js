@@ -159,6 +159,7 @@ const initializeStrategy = () => {
         }
     }))
 
+    
     const URL = process.env.NODE_ENV == 'production'
         ? process.env.URL_DEPLOY
         : "localhost"
