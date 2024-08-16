@@ -6,3 +6,39 @@
 ::1 - [2024-08-15T22:09:59.724Z] GET /api/sessions/logout
 [2024-08-15T22:09:59.725Z] El usuario ya cerró su sesión.
 ::1 - [2024-08-15T22:09:59.773Z] GET /
+::1 - [2024-08-15T23:09:13.122Z] GET /
+::1 - [2024-08-15T23:09:14.521Z] GET /login
+::1 - [2024-08-15T23:09:24.603Z] POST /api/sessions/login
+::1 - [2024-08-15T23:09:31.386Z] POST /api/sessions/login
+::1 - [2024-08-15T23:09:36.854Z] POST /api/sessions/login
+::1 - [2024-08-15T23:18:39.306Z] POST /api/sessions/login
+::1 - [2024-08-15T23:18:43.600Z] POST /api/sessions/login
+::1 - [2024-08-15T23:18:47.031Z] GET /login
+::1 - [2024-08-15T23:18:53.600Z] POST /api/sessions/login
+[2024-08-15T23:18:53.789Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-15T23:18:54.421Z] GET /products
+::1 - [2024-08-15T23:18:58.426Z] GET /api/sessions/logout
+[2024-08-15T23:18:58.528Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-15T23:18:58.585Z] GET /
+::1 - [2024-08-15T23:25:06.717Z] GET /
+::1 - [2024-08-15T23:25:08.165Z] GET /login
+::1 - [2024-08-15T23:25:15.400Z] POST /api/sessions/login
+[2024-08-15T23:25:15.401Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-15T23:25:15.709Z] GET /products
+::1 - [2024-08-15T23:25:20.062Z] GET /api/sessions/logout
+[2024-08-15T23:25:20.166Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-15T23:25:20.228Z] GET /
+::1 - [2024-08-15T23:25:21.378Z] GET /login
+::1 - [2024-08-15T23:25:29.426Z] POST /api/sessions/login
+[2024-08-15T23:25:29.642Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-15T23:25:29.690Z] GET /products
+::1 - [2024-08-15T23:25:31.154Z] GET /api/sessions/logout
+[2024-08-15T23:25:31.254Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-15T23:25:31.302Z] GET /
+::1 - [2024-08-15T23:25:32.572Z] GET /login
+::1 - [2024-08-15T23:25:38.916Z] POST /api/sessions/login
+[2024-08-15T23:25:39.087Z] Success: El usuario 'juanperezcoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-15T23:25:39.135Z] GET /products
+::1 - [2024-08-15T23:25:42.683Z] GET /api/sessions/logout
+[2024-08-15T23:25:42.787Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-15T23:25:42.833Z] GET /

@@ -22,7 +22,7 @@ const initializeStrategy = () => {
 
     const cookieExtractor = req => req && req.cookies ? req.cookies['userToken'] : null
 
-    const secret = config.SECRET || "gsdjkhj45j345345j3j53j45"
+    const secret = config.SECRET || "sdkjfhds88sdf989s8daf897sad"
     //defino un middleware para extraer el current user a partir de un token guardado en una cookie
     passport.use('jwt', new JwtStrategy({
         jwtFromRequest: ExtractJwt.fromExtractors([cookieExtractor]),
