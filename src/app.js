@@ -80,13 +80,7 @@ app.use(passport.session())
 //logger config
 app.use(useLogger)
 
-// CORS options
-const corsOptions = {
-    credentials: true,
-    origin: ['*'] // Whitelist the domains you want to allow
-}
-
-app.use(cors(corsOptions))  // Use the cors middleware with your options
+app.use(cors())  // Use the cors middleware with your options
 
 const main = async () => {
 
