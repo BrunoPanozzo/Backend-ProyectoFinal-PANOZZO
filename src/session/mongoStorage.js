@@ -8,18 +8,17 @@ const storage = MongoStore.create({
     ttl: 60
 }) 
 
-// module.exports = session({
-//     store: storage,
-//     secret: 'adasd127812be',
-//     resave: true,
-//     saveUninitialized: true
-// })
-
-
 module.exports = session({
     store: storage,
     secret: SECRET,
     resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true } // Solo en HTTPS
+    saveUninitialized: true
 })
+
+// module.exports = session({
+//     store: storage,
+//     secret: SECRET,
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: { secure: true } // Solo en HTTPS
+// })

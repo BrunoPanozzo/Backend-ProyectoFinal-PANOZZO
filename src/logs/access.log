@@ -48,3 +48,53 @@
 ::1 - [2024-08-16T21:24:21.157Z] POST /api/sessions/login
 [2024-08-16T21:24:21.158Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
 ::1 - [2024-08-16T21:24:21.476Z] GET /products
+::1 - [2024-08-16T21:43:00.325Z] GET /
+::1 - [2024-08-16T21:43:02.849Z] GET /login
+::1 - [2024-08-16T21:43:10.929Z] POST /api/sessions/login
+::1 - [2024-08-16T21:43:19.280Z] POST /api/sessions/login
+::1 - [2024-08-16T21:43:37.201Z] POST /api/sessions/login
+[2024-08-16T21:43:37.401Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-16T21:43:37.407Z] GET /products
+::1 - [2024-08-16T21:43:47.496Z] POST /api/sessions/login
+[2024-08-16T21:43:47.691Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-16T21:43:47.695Z] GET /products
+::1 - [2024-08-16T21:44:01.895Z] POST /api/sessions/login
+[2024-08-16T21:44:01.895Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-16T21:44:01.901Z] GET /products
+::1 - [2024-08-16T21:44:27.812Z] POST /api/sessions/login
+[2024-08-16T21:44:27.815Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-16T21:44:28.136Z] GET /products
+::1 - [2024-08-16T21:44:48.910Z] GET /api/sessions/logout
+[2024-08-16T21:44:48.915Z] El usuario ya cerró su sesión.
+::ffff:127.0.0.1 - [2024-08-16T21:44:49.250Z] GET /
+::ffff:127.0.0.1 - [2024-08-16T21:44:50.769Z] GET /login
+::ffff:127.0.0.1 - [2024-08-16T21:45:01.294Z] POST /api/sessions/login
+[2024-08-16T21:45:01.295Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-16T21:45:01.346Z] GET /products
+::1 - [2024-08-16T21:45:53.437Z] GET /api/sessions/logout
+[2024-08-16T21:45:53.543Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-16T21:45:53.596Z] GET /
+::1 - [2024-08-16T21:45:55.231Z] GET /login
+::1 - [2024-08-16T21:46:02.669Z] POST /api/sessions/login
+[2024-08-16T21:46:02.670Z] Success: El usuario 'adminCoder@coder.com' se logueó exitosamente.
+::1 - [2024-08-16T21:46:02.983Z] GET /products
+::1 - [2024-08-16T21:46:05.728Z] GET /users
+::1 - [2024-08-16T21:46:07.334Z] PUT /api/users/premium/66bcc0ef20f6274cd3048f71
+::1 - [2024-08-16T21:46:07.654Z] GET /users
+::1 - [2024-08-16T21:46:10.470Z] GET /api/sessions/logout
+[2024-08-16T21:46:10.563Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
+::1 - [2024-08-16T21:46:10.609Z] GET /
+::1 - [2024-08-16T21:46:11.775Z] GET /login
+::1 - [2024-08-16T21:46:17.776Z] POST /api/sessions/login
+[2024-08-16T21:46:17.960Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-16T21:46:18.007Z] GET /products
+::1 - [2024-08-16T21:46:19.540Z] GET /api/sessions/logout
+[2024-08-16T21:46:19.642Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-16T21:46:19.698Z] GET /
+::1 - [2024-08-16T21:46:20.793Z] GET /login
+::1 - [2024-08-16T21:46:27.319Z] POST /api/sessions/login
+[2024-08-16T21:46:27.520Z] Success: El usuario 'juanperezcoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-16T21:46:27.567Z] GET /products
+::1 - [2024-08-16T21:46:29.086Z] GET /api/sessions/logout
+[2024-08-16T21:46:29.192Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-16T21:46:29.248Z] GET /
