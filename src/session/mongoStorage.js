@@ -1,6 +1,6 @@
 const MongoStore = require('connect-mongo')
 const session = require('express-session')
-const { DBNAME, MONGO_URL } = require('../config/config')
+const { DBNAME, MONGO_URL, SECRET } = require('../config/config')
 
 const storage = MongoStore.create({
     dbName: DBNAME,
@@ -8,9 +8,18 @@ const storage = MongoStore.create({
     ttl: 60
 }) 
 
+// module.exports = session({
+//     store: storage,
+//     secret: 'adasd127812be',
+//     resave: true,
+//     saveUninitialized: true
+// })
+
+
 module.exports = session({
     store: storage,
-    secret: 'adasd127812be',
-    resave: true,
-    saveUninitialized: true
+    secret: SECRET,
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true } // Solo en HTTPS
 })
