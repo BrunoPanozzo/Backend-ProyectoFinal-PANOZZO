@@ -99,8 +99,7 @@ const main = async () => {
             //crear un servidor HTTP
             httpServer = app.listen(port, () => {
                 console.log(`Servidor listo escuchando en el puerto ${port}`)
-            });
-
+            })
         })
 
     //Manager del chat
