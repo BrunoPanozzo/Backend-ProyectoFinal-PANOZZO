@@ -1,6 +1,7 @@
 //definir los paquetes que se van a utilizar
 const express = require('express')
 const expressHandlebars = require("express-handlebars")
+const cors = require('cors')  // Import the cors package
 
 //importo las variables de entorno
 const { MONGO_URL, DBNAME, PORT } = require('./config/config')
@@ -76,7 +77,16 @@ initializeStrategy()
 app.use(passport.initialize())
 app.use(passport.session())
 
+//logger config
 app.use(useLogger)
+
+// CORS options
+const corsOptions = {
+    credentials: true,
+    origin: ['*'] // Whitelist the domains you want to allow
+}
+
+app.use(cors(corsOptions))  // Use the cors middleware with your options
 
 const main = async () => {
 
