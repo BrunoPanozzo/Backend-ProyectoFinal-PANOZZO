@@ -13,7 +13,7 @@ module.exports = session({
     secret: SECRET,
     resave: false,
     saveUninitialized: true
-})
+}) 
 
 // module.exports = session({
 //     store: storage,
