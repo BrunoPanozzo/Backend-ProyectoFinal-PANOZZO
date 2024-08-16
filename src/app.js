@@ -70,7 +70,7 @@ app.use('/apidocs', serve, setup(specs))
 
 //configuro mi session en MongoDB
 app.use(cookieParser())
-app.use(sessionMiddleware)
+app.use(sessionMiddleware) 
 
 // inicializamos Passport
 initializeStrategy()
