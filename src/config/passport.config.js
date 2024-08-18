@@ -163,7 +163,7 @@ const initializeStrategy = () => {
     const client_ID = process.env.CLIENT_ID          || 'Iv1.6d669ffe54ac6555'
     const client_SECRET = process.env.CLIENT_SECRET  || '28cf37c5290e1cb5ccbc9138c679536918cdef49'
     const callback_URL = process.env.NODE_ENV == 'production'
-                        ? "http://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback"
+                        ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback"
                         : process.env.CALLBACK_URL
     passport.use('github', new GithubStrategy({
         clientID: client_ID,
@@ -203,7 +203,7 @@ const initializeStrategy = () => {
     const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE          || '532470277181-3dlmskno7tfsppr6fglo0q1382tg3pqc.apps.googleusercontent.com'
     const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE  || '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'
     const callback_URL_GOOGLE = process.env.NODE_ENV == 'production'
-                        ? "http://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
+                        ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
                         : process.env.CALLBACK_URL_GOOGLE
     passport.use('google', new GoogleStrategy({
         clientID: client_ID_GOOGLE,
