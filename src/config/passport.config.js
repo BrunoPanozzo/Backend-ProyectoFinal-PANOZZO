@@ -158,11 +158,11 @@ const initializeStrategy = () => {
         catch (err) {
             done(err)
         }
-    }))
+    })) 
 
-    const client_ID = process.env.CLIENT_ID          || 'Iv1.6d669ffe54ac6555'
-    const client_SECRET = process.env.CLIENT_SECRET  || '28cf37c5290e1cb5ccbc9138c679536918cdef49'
-    const callback_URL = process.env.NODE_ENV == 'production'
+    const client_ID = process.env.CLIENT_ID     //  || "Ov23lioNSD6MweV4Vx0N" //  || 'Iv1.6d669ffe54ac6555'
+    const client_SECRET = process.env.CLIENT_SECRET // ||  "6af02e96adc91663cef4fd66cf7c75b2bb84b024"  //|| '28cf37c5290e1cb5ccbc9138c679536918cdef49'
+    const callback_URL = process.env.NODE_ENV == 'dev'
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback"
                         : process.env.CALLBACK_URL
     passport.use('github', new GithubStrategy({
@@ -171,6 +171,7 @@ const initializeStrategy = () => {
         callbackURL: callback_URL
     }, async (_accessToken, _refreshToken, profile, done) => {
         try {
+            console.log(callback_URL)
             //const user = await userModel.findOne({ email: profile._json.email })
             const logedUser = await userDAO.login({ email: profile._json.email })
             if (logedUser) {

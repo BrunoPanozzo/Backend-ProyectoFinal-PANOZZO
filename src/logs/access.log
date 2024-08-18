@@ -160,3 +160,28 @@
 ::1 - [2024-08-18T16:42:03.541Z] GET /api/sessions/logout
 [2024-08-18T16:42:03.641Z] Success: El usuario 'juanperezcoder@gmail.com' se deslogueó exitosamente.
 ::1 - [2024-08-18T16:42:03.698Z] GET /
+::1 - [2024-08-18T20:46:52.809Z] GET /
+::1 - [2024-08-18T20:46:55.775Z] GET /login
+::1 - [2024-08-18T20:46:56.999Z] GET /api/sessions/github
+::1 - [2024-08-18T20:46:57.592Z] GET /api/sessions/githubcallback
+[2024-08-18T20:46:57.593Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:48:40.038Z] GET /api/sessions/github
+::1 - [2024-08-18T20:48:40.644Z] GET /api/sessions/githubcallback
+[2024-08-18T20:48:40.648Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:49:46.014Z] GET /api/sessions/github
+::1 - [2024-08-18T20:50:04.784Z] GET /api/sessions/githubcallback
+[2024-08-18T20:50:04.785Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:50:15.579Z] GET /api/sessions/githubcallback
+[2024-08-18T20:50:15.579Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:51:02.852Z] GET /api/sessions/githubcallback
+[2024-08-18T20:51:02.852Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:54:27.003Z] GET /login
+::1 - [2024-08-18T20:54:28.247Z] GET /api/sessions/github
+::1 - [2024-08-18T20:54:28.840Z] GET /api/sessions/githubcallback
+[2024-08-18T20:54:28.844Z] Fatal error: AuthorizationError
+::1 - [2024-08-18T20:55:14.985Z] GET /api/sessions/github
+::1 - [2024-08-18T20:55:19.241Z] GET /api/sessions/githubcallback
+::1 - [2024-08-18T20:55:20.873Z] GET /products
+::1 - [2024-08-18T20:55:25.960Z] GET /api/sessions/logout
+[2024-08-18T20:55:26.074Z] Success: El usuario 'brunopanozzo@hotmail.com' se deslogueó exitosamente.
+::1 - [2024-08-18T20:55:26.134Z] GET /
