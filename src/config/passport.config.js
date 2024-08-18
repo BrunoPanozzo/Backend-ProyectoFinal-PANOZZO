@@ -87,9 +87,6 @@ const initializeStrategy = () => {
 
             //verifico si es el usuario "ADMIN"
             let logedUser
-            console.log(username)
-            console.log(ADMIN_USER)
-            console.log(password)
             console.log(config)
             if (username === config.ADMIN_USER && password === config.ADMIN_USER_PASS) {
                 logedUser = {
