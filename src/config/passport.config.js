@@ -80,6 +80,8 @@ const initializeStrategy = () => {
         usernameField: 'email'
     }, async (username, password, done) => {
         try {
+            console.log(process.env)
+
             if (!username || !password) {
                 // return res.status(400).json({ error: 'Credenciales inválidas!' })
                 return done(null, false, 'Credenciales inválidas!')
@@ -171,6 +173,8 @@ const initializeStrategy = () => {
         callbackURL: callback_URL
     }, async (_accessToken, _refreshToken, profile, done) => {
         try {
+            console.log(process.env)
+
             //const user = await userModel.findOne({ email: profile._json.email })
             const logedUser = await userDAO.login({ email: profile._json.email })
             if (logedUser) {
