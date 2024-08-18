@@ -21,4 +21,4 @@ module.exports = session({
 //     resave: false,
 //     saveUninitialized: true,
 //     cookie: { secure: true } // Solo en HTTPS
-// })
+// }) 
