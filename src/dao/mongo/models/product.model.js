@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const mongoosePaginate = require('mongoose-paginate-v2');
-const { ADMIN_USER } = require('../../../config/config');
+//const { ADMIN_USER } = require('../../../config/config');
 
 const productSchema = new mongoose.Schema({   
     id: {
@@ -41,7 +41,7 @@ const productSchema = new mongoose.Schema({
     owner: {
         type: String,
         required : true,
-        default: ADMIN_USER
+        default: process.env.ADMIN_USER
     },
 });
 

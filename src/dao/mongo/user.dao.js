@@ -1,4 +1,4 @@
-const config = require("../../config/config")
+//const config = require("../../config/config")
 const { USER, USER_PREMIUM } = require("../../config/policies.constants")
 const { hashPassword } = require("../../utils/hashing")
 const userModel = require("./models/user.model")

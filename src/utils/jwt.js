@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken')
-const config = require('../config/config')
+//const config = require('../config/config')
 
 const generateToken = user => {
-    const token = jwt.sign({ user }, config.SECRET, { expiresIn: '24h' })
+    const token = jwt.sign({ user }, process.env.SECRET, { expiresIn: '24h' })
     return token
 }
 
@@ -13,7 +13,7 @@ const verifyToken = (req, res, next) => {
     }
 
     const [, token] = authHeader.split(' ')  //su formato es Bearer sdsdfklgsdklfg, x eso hago split
-    jwt.verify(token, config.SECRET, (err, signedPayload) => {
+    jwt.verify(token, process.env.SECRET, (err, signedPayload) => {
         if (err) {
             return res.status(403).json({ error: 'Token de acceso inválido!' })
         }

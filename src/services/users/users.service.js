@@ -1,9 +1,9 @@
-const config = require('../../config/config')
+//const config = require('../../config/config')
 const { ADMIN, USER } = require('../../config/policies.constants')
 const { isValidPassword } = require('../../utils/hashing')
 
 const transport = require("../../utils/transport")
-const { GMAIL_ACCOUNT } = require('../../config/config')
+//const { GMAIL_ACCOUNT } = require('../../config/config')
 
 const { CustomError } = require('../errors/CustomError')
 const { ErrorCodes } = require('../errors/errorCodes')
@@ -23,7 +23,7 @@ class UsersServices {
 
         //verifico si es el usuario "ADMIN"
         let user
-        if (email === config.ADMIN_USER && password === config.ADMIN_USER_PASS) {
+        if (email === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
             user = {
                 rol: ADMIN,
                 firstName: "Coder",
@@ -157,7 +157,7 @@ class UsersServices {
     async notifyUser(user, title, subject, texto1, texto2) {
         try {
             await transport.sendMail({
-                from: GMAIL_ACCOUNT,
+                from: process.env.GMAIL_ACCOUNT,
                 to: `${user.email}`,
                 subject: subject,
                 html: `<div>

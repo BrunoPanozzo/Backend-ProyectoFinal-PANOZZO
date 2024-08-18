@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const supertest = require('supertest')
-const { ADMIN_USER } = require('../src/config/config')
+//const { ADMIN_USER } = require('../src/config/config')
 const requester = supertest('http://localhost:8080')
 const { UserDAO, ProductDAO } = require('../src/dao/factory')
 
@@ -42,7 +42,7 @@ describe('Testing de API Ecommerce', () => {
         stock: 10,
         status: true,
         category: "Moviles",
-        owner: ADMIN_USER
+        owner: process.env.ADMIN_USER
     }
 
     //register user

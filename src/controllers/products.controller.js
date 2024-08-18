@@ -4,7 +4,7 @@ const UsersServices = require('../services/users/users.service')
 const { ProductDAO, UserDAO } = require('../dao/factory')
 const { ProductDTO } = require('../dao/dto/product.dto')
 const { ADMIN, USER_PREMIUM } = require('../config/policies.constants')
-const { ADMIN_USER } = require('../config/config')
+//const { ADMIN_USER } = require('../config/config')
 
 class ProductsController {
 

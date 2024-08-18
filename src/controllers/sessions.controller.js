@@ -6,7 +6,7 @@ const SessionsServices = require('../services/sessions/sessions.service')
 const UsersServices = require('../services/users/users.service')
 const { generateInvalidCredentialsError } = require("../services/users/errors")
 const transport = require("../utils/transport")
-const { SECRET, GMAIL_ACCOUNT } = require('../config/config')
+//const { SECRET, GMAIL_ACCOUNT } = require('../config/config')
 const jwt = require('jsonwebtoken')
 
 class SessionsController {
@@ -65,7 +65,7 @@ class SessionsController {
                 req.logger.info('Token no proporcionado')
             }
 
-            jwt.verify(token, SECRET, async (err, decoded) => {
+            jwt.verify(token, process.env.SECRET, async (err, decoded) => {
                 if (err) {
                     req.logger.info('El link de recupero de contraseña no es válido o ha expirado.')
                     return res.redirect('/forget_password')
@@ -95,10 +95,10 @@ class SessionsController {
                     const URL = process.env.NODE_ENV == 'production'
                         ? "backend-proyectofinal-panozzo-production.up.railway.app"
                         : "localhost:8080"
-                    const token = jwt.sign({ email }, SECRET, { expiresIn: '1h' })
+                    const token = jwt.sign({ email }, process.env.SECRET, { expiresIn: '1h' })
                     const resetLink = `http://${URL}/reset_password/${email}/token/${token}`
                     await transport.sendMail({
-                        from: GMAIL_ACCOUNT,
+                        from: process.env.GMAIL_ACCOUNT,
                         to: `${email}`,
                         subject: 'Solicitud de cambio de contraseña',
                         html: `<div>

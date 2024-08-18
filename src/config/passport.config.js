@@ -6,8 +6,8 @@ const { Strategy, ExtractJwt } = require('passport-jwt')
 const googleStrategy = require('passport-google-oauth20')
 
 const { hashPassword, isValidPassword } = require('../utils/hashing')
-const config = require('./config')
-const { ADMIN_USER, ADMIN_USER_PASS} = require('./config')
+//const config = require('./config')
+//const { ADMIN_USER, ADMIN_USER_PASS} = require('./config')
 
 const LocalStrategy = localStrategy.Strategy
 const GithubStrategy = githubStrategy.Strategy
@@ -23,7 +23,7 @@ const initializeStrategy = () => {
 
     const cookieExtractor = req => req && req.cookies ? req.cookies['userToken'] : null
 
-    const secret = config.SECRET || "sdkjfhds88sdf989s8daf897sad"
+    const secret = process.env.SECRET || "sdkjfhds88sdf989s8daf897sad"
     //defino un middleware para extraer el current user a partir de un token guardado en una cookie
     passport.use('jwt', new JwtStrategy({
         jwtFromRequest: ExtractJwt.fromExtractors([cookieExtractor]),
@@ -87,8 +87,7 @@ const initializeStrategy = () => {
 
             //verifico si es el usuario "ADMIN"
             let logedUser
-            console.log(config)
-            if (username === config.ADMIN_USER && password === config.ADMIN_USER_PASS) {
+            if (username === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,
                     firstName: "Coder",
@@ -138,7 +137,7 @@ const initializeStrategy = () => {
 
             //verifico si es el usuario "ADMIN", no se le puede cambiar la pass
             let logedUser
-            if (username === config.ADMIN_USER) {
+            if (username === process.env.ADMIN_USER) {
                 return done(null, false)
             }
 
@@ -161,9 +160,9 @@ const initializeStrategy = () => {
         }
     }))
 
-    const client_ID = config.CLIENT_ID || 'Iv1.6d669ffe54ac6555'
-    const client_SECRET = config.CLIENT_SECRET || '28cf37c5290e1cb5ccbc9138c679536918cdef49'
-    const callback_URL = config.CALLBACK_URL || 'http://localhost:8080/api/sessions/githubcallback'
+    const client_ID = process.env.CLIENT_ID //|| 'Iv1.6d669ffe54ac6555'
+    const client_SECRET = process.env.CLIENT_SECRET //|| '28cf37c5290e1cb5ccbc9138c679536918cdef49'
+    const callback_URL = process.env.CALLBACK_URL //|| 'http://localhost:8080/api/sessions/githubcallback'
     passport.use('github', new GithubStrategy({
         clientID: client_ID,
         clientSecret: client_SECRET,
@@ -239,7 +238,7 @@ const initializeStrategy = () => {
     // simplemente se usa su id
     passport.serializeUser((user, done) => {
         // console.log('serialized!', user)
-        if (user.email === config.ADMIN_USER) {
+        if (user.email === process.env.ADMIN_USER) {
             // Serialización especial para el usuario 'adminCoder@coder.com'
             done(null, { _id: user._id, firstName: user.firstName, lastName: user.lastName, email: user.email, rol: user.rol, cart: user.cart });
         } else {
@@ -251,7 +250,7 @@ const initializeStrategy = () => {
     // el cual colocará en req.user para que podamos usarlo
     passport.deserializeUser(async (id, done) => {
         // console.log('deserialized!', id)
-        if (id.email === config.ADMIN_USER) {
+        if (id.email === process.env.ADMIN_USER) {
             // Deserialización especial para el usuario 'adminCoder@coder.com'
             done(null, id);
         } else {

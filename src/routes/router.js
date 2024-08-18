@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const jwt = require('jsonwebtoken')
-const { SECRET } = require('../config/config')
+//const { SECRET } = require('../config/config')
 const { PUBLIC, SUPER_ADMIN, USER, ADMIN, USER_PREMIUM } = require('../config/policies.constants')
 
 class BaseRouter {
@@ -128,7 +128,7 @@ class BaseRouter {
             }
 
             const [, token] = authHeader.split(' ')
-            jwt.verify(token, SECRET, (err, payload) => {
+            jwt.verify(token, process.env.SECRET, (err, payload) => {
                 if (err) {
                     return res.status(403).send({ status: 'error', error: 'Token inválido.' })
                 }

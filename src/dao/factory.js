@@ -9,7 +9,7 @@ const { CartDAO: CartFSDAO } = require("./fs/cart.dao");
 const { UserDAO: UserFSDAO } = require("./fs/user.dao");
 const { TicketDAO: TicketFSDAO } = require("./fs/ticket.dao");
 
-const { PERSISTENCE } = require('../config/config')
+//const { PERSISTENCE } = require('../config/config')
 
 // switch (PERSISTENCE) {
 //     case "MONGO":
@@ -28,22 +28,22 @@ const { PERSISTENCE } = require('../config/config')
 //module.exports = { Product, Cart, User }
 
 const ProductDAO = () => {
-    const productDAO = PERSISTENCE == "MONGO" ? new ProductMongoDAO() : new ProductFSDAO()
+    const productDAO = process.env.PERSISTENCE == "MONGO" ? new ProductMongoDAO() : new ProductFSDAO()
     productDAO.init()
     return productDAO
 }
 const CartDAO = () => {
-    const cartDAO = PERSISTENCE == "MONGO" ? new CartMongoDAO() : new CartFSDAO()
+    const cartDAO = process.env.PERSISTENCE == "MONGO" ? new CartMongoDAO() : new CartFSDAO()
     cartDAO.init()
     return cartDAO
 }
 const UserDAO = () => {
-    const userDAO = PERSISTENCE == "MONGO" ? new UserMongoDAO() : new UserFSDAO()
+    const userDAO = process.env.PERSISTENCE == "MONGO" ? new UserMongoDAO() : new UserFSDAO()
     userDAO.init()
     return userDAO
 }
 const TicketDAO = () => {
-    const ticketDAO = PERSISTENCE == "MONGO" ? new TicketMongoDAO() : new TicketFSDAO()
+    const ticketDAO = process.env.PERSISTENCE == "MONGO" ? new TicketMongoDAO() : new TicketFSDAO()
     ticketDAO.init()
     return ticketDAO
 }
