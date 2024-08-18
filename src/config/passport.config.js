@@ -160,8 +160,8 @@ const initializeStrategy = () => {
         }
     })) 
 
-    const client_ID = process.env.CLIENT_ID    
-    const client_SECRET = process.env.CLIENT_SECRET 
+    const client_ID = process.env.CLIENT_ID   || ""
+    const client_SECRET = process.env.CLIENT_SECRET || ""
     const callback_URL = process.env.NODE_ENV == 'production' 
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback"
                         : process.env.CALLBACK_URL
@@ -200,8 +200,8 @@ const initializeStrategy = () => {
         }
     }))
 
-    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    
-    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE 
+    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || ""
+    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE || ""
     const callback_URL_GOOGLE = process.env.NODE_ENV == 'production'
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
                         : process.env.CALLBACK_URL_GOOGLE
