@@ -6,7 +6,7 @@ const { Strategy, ExtractJwt } = require('passport-jwt')
 const googleStrategy = require('passport-google-oauth20')
 
 const { hashPassword, isValidPassword } = require('../utils/hashing')
-//const config = require('./config')
+const config = require('./config')
 //const { ADMIN_USER, ADMIN_USER_PASS} = require('./config')
 
 const LocalStrategy = localStrategy.Strategy
@@ -87,6 +87,8 @@ const initializeStrategy = () => {
 
             //verifico si es el usuario "ADMIN"
             let logedUser
+            console.log(config)
+            console.log(process.env)
             if (username === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,
