@@ -8,9 +8,10 @@ const storage = MongoStore.create({
     ttl: 60
 }) 
 
+const secret = SECRET || 'dfgsdfgsdbv4354terdfffx'
 module.exports = session({
     store: storage,
-    secret: SECRET,
+    secret: secret,
     resave: false,
     saveUninitialized: true
 }) 

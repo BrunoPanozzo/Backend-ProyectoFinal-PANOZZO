@@ -130,3 +130,11 @@
 ::1 - [2024-08-16T21:51:09.275Z] GET /api/sessions/logout
 [2024-08-16T21:51:09.368Z] Success: El usuario 'adminCoder@coder.com' se deslogueó exitosamente.
 ::1 - [2024-08-16T21:51:09.416Z] GET /
+::1 - [2024-08-18T15:35:54.982Z] GET /
+::1 - [2024-08-18T15:35:56.671Z] GET /login
+::1 - [2024-08-18T15:36:03.844Z] POST /api/sessions/login
+[2024-08-18T15:36:04.015Z] Success: El usuario 'martingarciacoder@gmail.com' se logueó exitosamente.
+::1 - [2024-08-18T15:36:04.331Z] GET /products
+::1 - [2024-08-18T15:36:07.842Z] GET /api/sessions/logout
+[2024-08-18T15:36:07.942Z] Success: El usuario 'martingarciacoder@gmail.com' se deslogueó exitosamente.
+::1 - [2024-08-18T15:36:07.989Z] GET /
