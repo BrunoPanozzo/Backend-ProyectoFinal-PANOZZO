@@ -86,9 +86,7 @@ const initializeStrategy = () => {
             }
 
             //verifico si es el usuario "ADMIN"
-            let logedUser
-            console.log(config)
-            console.log(process.env)
+            let logedUser            
             if (username === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,

@@ -237,6 +237,10 @@ class ViewsController {
 
     home(req, res) {
         try {
+            const config = require('../config/config')
+            console.log(config)
+            console.log(process.env)
+
             const isLoggedIn = ![null, undefined].includes(req.session.user)
 
             const data = {
