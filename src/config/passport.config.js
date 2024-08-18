@@ -7,6 +7,7 @@ const googleStrategy = require('passport-google-oauth20')
 
 const { hashPassword, isValidPassword } = require('../utils/hashing')
 const config = require('./config')
+const { ADMIN_USER, ADMIN_USER_PASS} = require('./config')
 
 const LocalStrategy = localStrategy.Strategy
 const GithubStrategy = githubStrategy.Strategy
@@ -87,9 +88,9 @@ const initializeStrategy = () => {
             //verifico si es el usuario "ADMIN"
             let logedUser
             console.log(username)
-            console.log(config.ADMIN_USER)
+            console.log(ADMIN_USER)
             console.log(password)
-            console.log(config.ADMIN_USER_PASS)
+            console.log(config)
             if (username === config.ADMIN_USER && password === config.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,
