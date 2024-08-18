@@ -200,40 +200,45 @@ const initializeStrategy = () => {
         }
     }))
 
-    // passport.use('google', new GoogleStrategy({
-    //     clientID: config.CLIENT_ID_GOOGLE,
-    //     clientSecret: config.CLIENT_SECRET_GOOGLE ,
-    //     callbackURL: config.CALLBACK_URL_GOOGLE
-    // }, async (_accessToken, _refreshToken, profile, done) => {
-    //     try {
-    //         const email = profile.emails[0].value;
-    //         //const user = await userModel.findOne({ email: email })
-    //         const logedUser = await userDAO.login({ email: email })
-    //         if (logedUser) {
-    //             return done(null, logedUser)
-    //         }
+    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE          || '532470277181-3dlmskno7tfsppr6fglo0q1382tg3pqc.apps.googleusercontent.com'
+    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE  || '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'
+    const callback_URL_GOOGLE = process.env.NODE_ENV == 'production'
+                        ? "http://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
+                        : process.env.CALLBACK_URL_GOOGLE
+    passport.use('google', new GoogleStrategy({
+        clientID: client_ID_GOOGLE,
+        clientSecret: client_SECRET_GOOGLE,
+        callbackURL: callback_URL_GOOGLE
+    }, async (_accessToken, _refreshToken, profile, done) => {
+        try {
+            const email = profile.emails[0].value;
+            //const user = await userModel.findOne({ email: email })
+            const logedUser = await userDAO.login({ email: email })
+            if (logedUser) {
+                return done(null, logedUser)
+            }
 
-    //         // crear el usuario porque no existe
-    //         const newCart = cartDAO.getID(await cartDAO.addCart([])) //null
-    //         const firstName = profile._json.given_name
-    //         const lastName = profile._json.family_name
-    //         const newUser = {
-    //             firstName,
-    //             lastName,
-    //             age: 30,
-    //             email: email,
-    //             password: '',
-    //             cart: newCart,
-    //             last_connection: Date.now(),
-    //         }
-    //         //const result = await userModel.create(newUser)
-    //         const result = await userDAO.saveUser(newUser)
-    //         done(null, result)
-    //     }
-    //     catch (err) {
-    //         done(err)
-    //     }
-    // }))
+            // crear el usuario porque no existe
+            const newCart = cartDAO.getID(await cartDAO.addCart([])) //null
+            const firstName = profile._json.given_name
+            const lastName = profile._json.family_name
+            const newUser = {
+                firstName,
+                lastName,
+                age: 30,
+                email: email,
+                password: '',
+                cart: newCart,
+                last_connection: Date.now(),
+            }
+            //const result = await userModel.create(newUser)
+            const result = await userDAO.saveUser(newUser)
+            done(null, result)
+        }
+        catch (err) {
+            done(err)
+        }
+    }))
 
     // al hacer register o login del usuario, se pasa el modelo de user al callback done
     // passport necesita serializar este modelo, para guardar una referencia al usuario en la sesión
