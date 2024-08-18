@@ -90,7 +90,7 @@ class SessionsController {
     async forgetPassword(req, res) {
         try {
             const { email } = req.body
-            if (email) {
+            if (email) {   
                 try {
                     const URL = process.env.NODE_ENV == 'production'
                         ? "backend-proyectofinal-panozzo-production.up.railway.app"
