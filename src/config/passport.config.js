@@ -160,8 +160,8 @@ const initializeStrategy = () => {
         }
     })) 
 
-    const client_ID = process.env.CLIENT_ID   || ""
-    const client_SECRET = process.env.CLIENT_SECRET || ""
+    const client_ID = process.env.CLIENT_ID   || "Ov23li6TmrJdqslKYF5U"
+    const client_SECRET = process.env.CLIENT_SECRET || "caf3ffa66aa9f5bb839eb581fc5c8b03e363cb83"
     const callback_URL = process.env.NODE_ENV == 'production' 
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/githubcallback"
                         : process.env.CALLBACK_URL
@@ -200,8 +200,8 @@ const initializeStrategy = () => {
         }
     }))
 
-    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || ""
-    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE || ""
+    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || "532470277181-3dlmskno7tfsppr6fglo0q1382tg3pqc.apps.googleusercontent.com"
+    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE || "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"
     const callback_URL_GOOGLE = process.env.NODE_ENV == 'production'
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
                         : process.env.CALLBACK_URL_GOOGLE
