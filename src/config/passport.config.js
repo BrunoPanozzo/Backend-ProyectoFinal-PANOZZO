@@ -80,15 +80,18 @@ const initializeStrategy = () => {
         usernameField: 'email'
     }, async (username, password, done) => {
         try {
-            console.log(process.env)
-
             if (!username || !password) {
                 // return res.status(400).json({ error: 'Credenciales inválidas!' })
                 return done(null, false, 'Credenciales inválidas!')
             }
 
             //verifico si es el usuario "ADMIN"
-            let logedUser            
+            let logedUser     
+            console.log(username)
+            console.log(password)
+            console.log(process.env.ADMIN_USER)
+            console.log(process.env.ADMIN_USER_PASS)
+       
             if (username === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,
