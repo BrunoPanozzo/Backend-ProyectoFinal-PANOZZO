@@ -7,7 +7,7 @@ const storage = MongoStore.create({
     mongoUrl: MONGO_URL,
     ttl: 60
 }) 
-
+ 
 const secret = SECRET || 'dfgsdfgsdbv4354terdfffx'
 module.exports = session({
     store: storage,
