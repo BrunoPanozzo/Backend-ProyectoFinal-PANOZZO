@@ -197,7 +197,7 @@ const initializeStrategy = () => {
         }
         catch (err) {
             done(err)
-        }
+        } 
     }))
 
     const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || "532470277181-ra0ulvg1k165r7k9r8m2cqc1njmd8oqr.apps.googleusercontent.com"
