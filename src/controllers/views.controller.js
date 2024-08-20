@@ -17,7 +17,7 @@ class ViewsController {
         const productDAO = ProductDAO()
         this.productsService = new ProductsServices(productDAO)
         const cartsDAO = CartDAO()
-        this.cartsService = new CartsServices(cartsDAO)        
+        this.cartsService = new CartsServices(cartsDAO)
         const userDAO = UserDAO()
         this.usersServices = new UsersServices(userDAO)
     }
@@ -27,7 +27,7 @@ class ViewsController {
             const filteredProducts = await this.productsService.getProducts(req.query)
 
             let user = req.session.user
-            let isAdmin = [ADMIN].includes(req.session.user.rol)      
+            let isAdmin = [ADMIN].includes(req.session.user.rol)
             let isPremium = [USER_PREMIUM].includes(req.session.user.rol)
 
             const data = {
@@ -37,8 +37,8 @@ class ViewsController {
                 useWS: false,
                 user,
                 filteredProducts,
-                isAdmin, 
-                isPremium                
+                isAdmin,
+                isPremium
             }
 
             res.render('allProducts', data)
@@ -71,7 +71,7 @@ class ViewsController {
                 scripts: ['productDetail.js'],
                 styles: ['home.css', 'productDetail.css'],
                 useWS: false,
-                useSweetAlert: false,
+                useSweetAlert: true,
                 product,
                 cid,
                 isNotAdmin
@@ -103,7 +103,7 @@ class ViewsController {
             let quantity = 1
             const result = await this.cartsService.addProductToCart(user.cart, prodId, quantity);
             if (result) {
-                this.showAlert(res, user.cart, product)                
+                this.showAlert(res, user.cart, product)
                 //return res.sendSuccess(`Se agregaron ${quantity} producto/s con ID ${prodId} al carrito con ID ${user.cart}.`)
             }
             else
@@ -123,7 +123,7 @@ class ViewsController {
     showAlert = (res, userCart, product) => {
         try {
             const alertMessage = {
-                icon: 'Success!',
+                icon: 'success',
                 title: 'Compra confirmada.',
                 text: `El producto ${product.title} se agregó al carrito.`
             }
@@ -167,8 +167,9 @@ class ViewsController {
                 // scripts: ['cartDetail.js'],
                 styles: ['home.css', 'cartDetail.css'],
                 useWS: false,
+                useSweetAlert: true,
                 cart,
-                cid, 
+                cid,
                 notEmptyCart
             }
 
@@ -327,7 +328,7 @@ class ViewsController {
                     email: user.email
                 }
             }
-            
+
             res.render('profile', data)
         }
         catch (err) {
@@ -371,18 +372,18 @@ class ViewsController {
         try {
             //sólo se puede acceder SI está logueado y es ADMIN
             let user = req.session.user
-            const users = await this.usersServices.getUsers()        
+            const users = await this.usersServices.getUsers()
+
             const data = {
-                title: 'Administración de Usuarios',
+                title: "Administración de Usuarios",
                 useWS: false,
                 useSweetAlert: true,
                 scripts: ['deleteUser.js', 'deleteOldUsers.js', 'changeRol.js'],
                 styles: ['home.css'],
                 user,
-                users
+                users,
             }
-
-            res.render('allUsers', data )
+            res.render('allUsers', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })

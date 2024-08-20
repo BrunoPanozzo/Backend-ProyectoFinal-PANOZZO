@@ -53,6 +53,8 @@ class CartDAO {
 
             //obtengo los productos del carrito        
             const productsFromCart = cart.products
+            console.log(prodId)
+            //console.log(productsFromCart[0]._id._id.toString())
             const productIndex = productsFromCart.findIndex(item => item._id._id.toString() === prodId)
             if (productIndex != -1) {
                 //existe el producto en el carrito, actualizo sólo su cantidad

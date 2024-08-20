@@ -86,12 +86,7 @@ const initializeStrategy = () => {
             }
 
             //verifico si es el usuario "ADMIN"
-            let logedUser     
-            console.log(username)
-            console.log(password)
-            console.log(process.env.ADMIN_USER)
-            console.log(process.env.ADMIN_USER_PASS)
-       
+            let logedUser       
             if (username === process.env.ADMIN_USER && password === process.env.ADMIN_USER_PASS) {
                 logedUser = {
                     rol: ADMIN,
@@ -176,8 +171,6 @@ const initializeStrategy = () => {
         callbackURL: callback_URL
     }, async (_accessToken, _refreshToken, profile, done) => {
         try {
-            console.log(process.env)
-
             //const user = await userModel.findOne({ email: profile._json.email })
             const logedUser = await userDAO.login({ email: profile._json.email })
             if (logedUser) {
@@ -207,8 +200,8 @@ const initializeStrategy = () => {
         }
     }))
 
-    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || "532470277181-3dlmskno7tfsppr6fglo0q1382tg3pqc.apps.googleusercontent.com"
-    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE || "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"
+    const client_ID_GOOGLE = process.env.CLIENT_ID_GOOGLE    || "532470277181-ra0ulvg1k165r7k9r8m2cqc1njmd8oqr.apps.googleusercontent.com"
+    const client_SECRET_GOOGLE = process.env.CLIENT_SECRET_GOOGLE || "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"
     const callback_URL_GOOGLE = process.env.NODE_ENV == 'production'
                         ? "https://backend-proyectofinal-panozzo-production.up.railway.app/api/sessions/googlecallback"
                         : process.env.CALLBACK_URL_GOOGLE

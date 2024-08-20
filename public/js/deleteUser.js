@@ -9,7 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
             })
                 .then((result) => {
                     if (result.status === 200) {
-                        window.location.reload()  // se recarga la página actual
+                        Swal.fire({
+                            title: 'Se eliminó con éxito el usuario!',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.reload()
+                            }
+                        })
+                    }
+                    else {
+                        Swal.fire({
+                            title: 'No se pudo eliminar el usuario!',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.reload()
+                            }
+                        })
                     }
                 })
                 .catch(error => {

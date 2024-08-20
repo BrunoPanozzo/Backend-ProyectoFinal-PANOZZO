@@ -27,12 +27,11 @@
         crossorigin="anonymous"></script>
 
     {{!-- incluir librería sweetalert si es necesario --}}
-    {{!-- {{#if useSweetAlert }} --}}
+    {{!-- {{#if useSweetAlert }}  --}}
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     {{!-- {{/if}} --}}
-
+  
     {{#if alertMessage}}
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         Swal.fire({
             title: '{{alertMessage.title}}',
@@ -43,9 +42,9 @@
     {{/if}}
 
     {{!-- incluir socket.io si es necesario --}}
-    {{#if useWS}}
+    {{!-- {{#if useWS}} --}}
     <script src="/socket.io/socket.io.js"></script>
-    {{/if}}
+    {{!-- {{/if}} --}}
 
     {{!-- desde la ruta en express, podremos incluir 1 o varios archivos js indicando su nombre en scripts --}}
     {{#each scripts }}

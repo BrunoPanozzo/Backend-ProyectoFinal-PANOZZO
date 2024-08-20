@@ -75,9 +75,7 @@ class CartsController {
             let cartId = req.cid
             let prodId = req.pid
             let quantity = +req.body.quantity
-           
-            //console.log(quantity)
-            
+                       
             const result = await this.cartsService.addProductToCart(cartId, prodId, quantity)
             if (result)
                 // HTTP 200 OK => carrito modificado exitosamente

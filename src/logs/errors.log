@@ -4,3 +4,9 @@
 [2024-08-18T20:50:15.580Z] Fatal error: AuthorizationError
 [2024-08-18T20:51:02.852Z] Fatal error: AuthorizationError
 [2024-08-18T20:54:28.844Z] Fatal error: AuthorizationError
+[2024-08-20T03:33:39.322Z] Server error: ReferenceError: showAlert is not defined
+[2024-08-20T03:34:00.182Z] Server error: ReferenceError: showAlert is not defined
+[2024-08-20T03:34:12.077Z] Server error: ReferenceError: showAlert is not defined
+[2024-08-20T04:37:43.166Z] Server error: ReferenceError: product is not defined
+[2024-08-20T04:37:58.558Z] Server error: ReferenceError: product is not defined
+[2024-08-20T04:38:57.576Z] Server error: ReferenceError: product is not defined

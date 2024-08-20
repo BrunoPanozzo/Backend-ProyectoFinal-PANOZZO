@@ -74,39 +74,13 @@ class UsersController {
 
     async changeRole(req, res) {
         try {
+            console.log('voy a cambiar')
             const userId = req.params.uid
             const result = await this.usersService.changeRole(userId)
             if (!result) {
                 return res.sendServerError(`No se pudo cambiar el rol del usuario '${userId}'`)
             }
-
-            //return res.sendSuccess(`El usuario '${userId}' cambió su rol.`)
-            const user = await this.sessionsService.getUserById(userId)
-            const alertMessage = {
-                icon: 'Success!',
-                title: 'Cambio de rol exitoso.',
-                text: `El usuario ${user.email} tiene un nuevo rol asignado: ${user.rol}.`
-            }
-            const users = await this.usersService.getUsers()
-            this.showAlert(res, alertMessage, user, users)
-        }
-        catch (err) {
-            return res.sendServerError(err)
-        }
-    }
-
-    showAlert = (res, alertMessage, user, users) => {
-        try {
-            const data = {
-                alertMessage,
-                title: 'Administración de Usuarios',
-                scripts: ['deleteUser.js', 'deleteOldUsers.js', 'changeRol.js'],
-                styles: ['home.css'],
-                user,
-                users
-            }
-
-            res.render('allUsers', data)
+            return res.sendSuccess(`El usuario '${userId}' cambió su rol.`)   
         }
         catch (err) {
             return res.sendServerError(err)
@@ -133,7 +107,6 @@ class UsersController {
         try {
             const allUsers = await this.usersService.getUsers()
             const usersDTOs = allUsers.map(user => new SimpleUserDTO(user))
-
             return res.sendSuccess(usersDTOs)
         }
         catch (err) {
@@ -144,20 +117,16 @@ class UsersController {
     async deleteOldUsers(req, res) {
         try {
             const oldUsers = await this.usersService.deleteOldUsers()
+            if (oldUsers.length == 0) {
+                req.logger.info('Warning: ' + "No existen usuarios inactivos")
+                return res.status(209).send("No existen usuarios inactivos")
+            }
+            
             const result = await this.usersService.deleteAndNotifyOldUsers(oldUsers)
             if (!result) {
                 return res.sendServerError(`No se pudieron eliminar los usuarios con cuentas inactivas`)
-            }
-            
-            //return res.sendSuccess(oldUsers)
-            const alertMessage = {
-                icon: 'Success!',
-                title: 'Usuarios eliminados con éxito.',
-                text: `Se han cerrado las cuentas de los usuarios con cuentas inactivas pro más de 2 días.`
-            }
-            const user = req.session.user
-            const users = await this.usersService.getUsers()
-            this.showAlert(res, alertMessage, user, users)
+            }            
+            return res.sendSuccess(oldUsers)            
         }
         catch (err) {
             res.sendServerError(err)
@@ -171,17 +140,7 @@ class UsersController {
             if (!result) {
                 return res.sendServerError(`No se pudo eliminar el usuario '${userId}'`)
             }
-
-            //return res.sendSuccess(result)
-
-            const user = req.session.user
-            const alertMessage = {
-                icon: 'Success!',
-                title: 'Usuario eliminado con éxito.',
-                text: `El usuario ${userId} ha sido eliminado del sitio.`
-            }
-            const users = await this.usersService.getUsers()
-            this.showAlert(res, alertMessage, user, users)
+            return res.sendSuccess(result)
         }
         catch (err) {
             res.sendServerError(err)
