@@ -74,7 +74,6 @@ class UsersController {
 
     async changeRole(req, res) {
         try {
-            console.log('voy a cambiar')
             const userId = req.params.uid
             const result = await this.usersService.changeRole(userId)
             if (!result) {

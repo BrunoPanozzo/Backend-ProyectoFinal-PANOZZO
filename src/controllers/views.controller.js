@@ -193,7 +193,7 @@ class ViewsController {
                 allProducts
             }
 
-            res.render('realtimeproducts', data)
+            res.render('realTimeProducts', data)
         }
         catch (err) {
             //return res.status(500).json({ message: err.message })
